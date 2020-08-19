@@ -1,5 +1,4 @@
-package Duke;
-
+package pack;
 public class Task {
     protected String description;
     protected boolean isDone;
