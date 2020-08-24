@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 import Task.Task;
 
 public class Duke {
@@ -13,7 +14,7 @@ public class Duke {
                 + "What can I do for you?\n";
         System.out.println(greet);
         Scanner echo = new Scanner(System.in);
-
+        ArrayList<String> toDoList = new ArrayList<String>(100);
         String usrin = echo.nextLine();
 
         if(!usrin.equals("Bye")) {
@@ -25,13 +26,19 @@ public class Duke {
 
                 if(usrin.equals("list")){
                     System.out.println("Here are the tasks in your list:\n");
-
+                    t.getList();
                 }
 
-                if(!usrin.equals("list"))
-                    t = new Task(usrin);
-                    System.out.println("   Added: " + usrin);
-
+                if(!usrin.equals("list")) {
+                    if(usrin.startsWith("done")){
+                        String[] in = usrin.split(" ");
+                        t.markAsDone();
+                    }
+                    else {
+                        t = new Task(usrin);
+                        System.out.println("   Added: " + usrin);
+                    }
+                }
             }
         }
 
