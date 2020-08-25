@@ -14,10 +14,16 @@ public class Task {
     }
 
     public void markAsDone(){
-        this.isDone = true;
+        isDone = true;
+        System.out.printf(
+                "    \n" +
+                "Nice! I've marked this task as done:\n" +
+                "[%s] %s\n"
+                ,getStatusIcon(),description
+        );
     }
 
-    public void getList(){
-        System.out.println(getStatusIcon() + " " + this.description);
+    public String getDescription(){
+        return description;
     }
 }
