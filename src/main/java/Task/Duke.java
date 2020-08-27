@@ -42,10 +42,7 @@ public class Duke {
         Scanner echo = new Scanner(System.in);
         // scan user input
         String userInput = echo.nextLine();
-        // insert user input if it is not "bye"
-        if(!userInput.equals("Bye")){
-            insertToList(userInput);
-        }
+
         // execute command of the user input until "bye" is entered
         while (!userInput.equals("Bye")){
             // display list
