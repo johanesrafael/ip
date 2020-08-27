@@ -53,9 +53,9 @@ public class Duke {
                 // take out the word after "done"
                 String indexString = userInput.split(" ")[1];
                 // change the word into integer
-                Integer indextask = Integer.parseInt(indexString);
+                Integer indexTask = Integer.parseInt(indexString);
                 // mark task as done
-                tasks[indextask-1].markAsDone();
+                tasks[indexTask-1].markAsDone();
             }
             else{
                 // insert into list
