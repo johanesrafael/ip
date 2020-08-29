@@ -14,7 +14,9 @@ public class Task {
     }
 
     public void markAsDone(){
+        // set isDone to be true
         isDone = true;
+        // print the marked task
         System.out.printf("    \n" +
                 "Nice! I've marked this task as done:\n" +
                 "[%s] %s\n"
