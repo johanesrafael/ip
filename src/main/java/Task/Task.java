@@ -15,12 +15,10 @@ public class Task {
 
     public void markAsDone(){
         isDone = true;
-        System.out.printf(
-                "    \n" +
+        System.out.printf("    \n" +
                 "Nice! I've marked this task as done:\n" +
                 "[%s] %s\n"
-                ,getStatusIcon(),description
-        );
+                ,getStatusIcon(),description);
     }
 
     public String getDescription(){
