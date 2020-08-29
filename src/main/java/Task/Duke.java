@@ -8,21 +8,41 @@ public class Duke {
     private static int listCounter = 0;
 
     // to insert user input to the list
-    public static void insertToList(String userInput){
-        // create temporary task for passing over the user input to the actual task
-        Task task = new Task(userInput);
-        // assign task into actual task and increment listCounter
-        tasks[listCounter++] = task;
-        System.out.println("   Added: "
-                + task.getDescription());
+    public static void insertToList(String userInput) {
+        if(userInput.startsWith("todo")) {
+            String description = userInput.split("todo")[1];
+            // create temporary task for passing over the user input to the actual task
+            Todo task = new Todo(description);
+            // assign task into actual task and increment listCounter
+            tasks[listCounter++] = task;
+        }
+        else if(userInput.startsWith("deadline")){
+            String[] by = userInput.split("/by");
+            String description = by[0].split("deadline")[1];
+            Deadline task = new Deadline(description,by[1]);
+            tasks[listCounter++] = task;
+        }
+        else if(userInput.startsWith("event")){
+            String[] at = userInput.split("/at");
+            String description = at[0].split("event")[1];
+            Deadline task = new Deadline(description,at[1]);
+            tasks[listCounter++] = task;
+        }
+
+        if (listCounter < 2) {
+            System.out.println("   Got it. I've added this task:\n\t"
+                    + tasks[listCounter-1] + "\n   Now you have " + listCounter + " task in the list.\n");
+        } else {
+            System.out.println("   Got it. I've added this task:\n\t"
+                    + tasks[listCounter-1] + "\n   Now you have " + listCounter + " tasks in the list.\n");
+        }
     }
 
     // to view tasks
     public static void getList(){
-        System.out.println("Here are the tasks in your list:\n");
+        System.out.println("   Here are the tasks in your list:\n");
         for(int i = 0; i < listCounter; i++){
-            System.out.println("   " + (i + 1) + ".[" + tasks[i].getStatusIcon()
-                    + "]" + tasks[i].getDescription());
+            System.out.println("   " + (i + 1) + ". " + tasks[i]);
         }
     }
 

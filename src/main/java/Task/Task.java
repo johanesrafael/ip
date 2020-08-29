@@ -18,12 +18,17 @@ public class Task {
         isDone = true;
         // print the marked task
         System.out.printf("    \n" +
-                "Nice! I've marked this task as done:\n" +
-                "[%s] %s\n"
+                "   Nice! I've marked this task as done:\n" +
+                "\t[%s] %s\n"
                 ,getStatusIcon(),description);
     }
 
     public String getDescription(){
         return description;
+    }
+
+    @Override
+    public String toString() {
+        return "["+ getStatusIcon() + "]" + getDescription();
     }
 }
