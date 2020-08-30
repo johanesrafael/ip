@@ -38,12 +38,18 @@ public class Duke {
             tasks[listCounter++] = task;
         }
         // print the newly added task
+        printAddedTask();
+    }
+
+    private static void printAddedTask() {
         if (listCounter < 2) {
             System.out.println("   Got it. I've added this task:\n\t"
-                    + tasks[listCounter-1] + "\n   Now you have " + listCounter + " task in the list.\n");
+                    + tasks[listCounter-1] + "\n   Now you have "
+                    + listCounter + " task in the list.\n");
         } else {
             System.out.println("   Got it. I've added this task:\n\t"
-                    + tasks[listCounter-1] + "\n   Now you have " + listCounter + " tasks in the list.\n");
+                    + tasks[listCounter-1] + "\n   Now you have "
+                    + listCounter + " tasks in the list.\n");
         }
     }
 
@@ -55,19 +61,41 @@ public class Duke {
         }
     }
 
-    public static void main(String[] args) {
-        // create logo
+    private static void createLogo() {
         String logo = " ____        _        \n"
                 + "|  _ \\ _   _| | _____ \n"
                 + "| | | | | | | |/ / _ \\\n"
                 + "| |_| | |_| |   <  __/\n"
                 + "|____/ \\__,_|_|\\_\\___|\n";
         System.out.println("Hello from\n" + logo);
-        // greet
+    }
+
+    private static void greet() {
         String greet = "Hello! I'm Duke\n"
                 + "What can I do for you?\n";
         // print greet
         System.out.println(greet);
+    }
+
+    private static void createByeMessage() {
+        String exit = "\nBye. Hope to see you again soon!\n";
+        System.out.println("   " + exit);
+    }
+
+    private static void setDone(String userInput) {
+        // take out the word after "done"
+        String indexString = userInput.split(" ")[1];
+        // change the word into integer
+        Integer indexTask = Integer.parseInt(indexString);
+        // mark task as done
+        tasks[indexTask-1].markAsDone();
+    }
+
+    public static void main(String[] args) {
+        // create logo
+        createLogo();
+        // greet
+        greet();
         Scanner echo = new Scanner(System.in);
         // scan user input
         String userInput = echo.nextLine();
@@ -79,12 +107,7 @@ public class Duke {
                 getList();
             }
             else if(userInput.startsWith("done")){
-                // take out the word after "done"
-                String indexString = userInput.split(" ")[1];
-                // change the word into integer
-                Integer indexTask = Integer.parseInt(indexString);
-                // mark task as done
-                tasks[indexTask-1].markAsDone();
+                setDone(userInput);
             }
             else{
                 // insert into list
@@ -95,7 +118,6 @@ public class Duke {
         }
 
         // create bye message
-        String exit = "\nBye. Hope to see you again soon!\n";
-        System.out.println("   " + exit);
+        createByeMessage();
     }
 }
