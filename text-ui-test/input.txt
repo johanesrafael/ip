@@ -3,4 +3,5 @@ deadline home assignment /by Mon 2 pm
 event project meeting /at Thurs 7-9pm
 list
 done 2
+list
 Bye

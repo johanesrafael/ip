@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="944e3822-5dd0-44b9-b14a-06d2eb424e12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/Task/Deadline.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Task/Duke.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Task/Event.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Task/Task.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Task/Todo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text-ui-test/ACTUAL.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text-ui-test/runtest.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IP/Task/Duke.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IP/Task/Duke.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/Duke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Duke.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text-ui-test/EXPECTED.txt" beforeDir="false" afterPath="$PROJECT_DIR$/text-ui-test/EXPECTED.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Task/Duke.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Task/Duke.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text-ui-test/ACTUAL.TXT" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/text-ui-test/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/text-ui-test/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text-ui-test/runtest.bat" beforeDir="false" afterPath="$PROJECT_DIR$/text-ui-test/runtest.bat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +91,7 @@
       <workItem from="1598421373378" duration="457000" />
       <workItem from="1598506139238" duration="2438000" />
       <workItem from="1598605542709" duration="785000" />
-      <workItem from="1598712367743" duration="11783000" />
+      <workItem from="1598712367743" duration="12511000" />
     </task>
     <task id="LOCAL-00001" summary="Level 3">
       <created>1598227365775</created>
@@ -192,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598743026709</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Level-4. ToDos, Events, Deadlines">
+      <created>1598747427816</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1598747427816</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,26 +222,26 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="640" y="261" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598369548204" />
-    <state x="585" y="93" key="CommitChangelistDialog2" timestamp="1598743025933">
+    <state x="585" y="93" key="CommitChangelistDialog2" timestamp="1598747427039">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="93" key="CommitChangelistDialog2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598743025933" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1598746215999">
+    <state x="585" y="93" key="CommitChangelistDialog2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598747427039" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1598749436440">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598746215999" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1598746215998">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598749436440" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1598749436440">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598746215998" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1598746215998">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598749436440" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1598749436440">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598746215998" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1598746215998">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598749436440" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1598749436440">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598746215998" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598749436440" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598383858166">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -271,10 +270,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598507099373" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1598742132942">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1598747451868">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598742132942" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598747451868" />
     <state x="774" y="369" key="git4idea.ui.GitTagDialog" timestamp="1598605714401">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
