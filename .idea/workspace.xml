@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="944e3822-5dd0-44b9-b14a-06d2eb424e12" name="Default Changelist" comment="" />
+    <list default="true" id="944e3822-5dd0-44b9-b14a-06d2eb424e12" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bin/Task/Deadline.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Task/Duke.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Task/Event.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Task/Task.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Task/Todo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text-ui-test/ACTUAL.TXT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IP/Task/Duke.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IP/Task/Duke.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task/Duke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Duke.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text-ui-test/EXPECTED.txt" beforeDir="false" afterPath="$PROJECT_DIR$/text-ui-test/EXPECTED.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text-ui-test/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/text-ui-test/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text-ui-test/runtest.bat" beforeDir="false" afterPath="$PROJECT_DIR$/text-ui-test/runtest.bat" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,11 +38,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1gV8BR1F83bop4irQVLgkm2aO3C" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -38,6 +56,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
@@ -80,7 +99,7 @@
       <workItem from="1598421373378" duration="457000" />
       <workItem from="1598506139238" duration="2438000" />
       <workItem from="1598605542709" duration="785000" />
-      <workItem from="1598712367743" duration="9026000" />
+      <workItem from="1598712367743" duration="11783000" />
     </task>
     <task id="LOCAL-00001" summary="Level 3">
       <created>1598227365775</created>
@@ -166,13 +185,21 @@
       <option name="project" value="LOCAL" />
       <updated>1598742127010</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Level-4. ToDos, Events, Deadlines">
+      <created>1598743026709</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1598743026709</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Level 3" />
     <MESSAGE value="Level 3: Mark As Done" />
     <MESSAGE value="A-CodingStandard" />
@@ -196,26 +223,26 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="640" y="261" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598369548204" />
-    <state x="585" y="93" key="CommitChangelistDialog2" timestamp="1598742126301">
+    <state x="585" y="93" key="CommitChangelistDialog2" timestamp="1598743025933">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="93" key="CommitChangelistDialog2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598742126301" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1598741531528">
+    <state x="585" y="93" key="CommitChangelistDialog2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598743025933" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1598746215999">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598741531528" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1598741531528">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598746215999" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1598746215998">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598741531528" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1598741531527">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598746215998" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1598746215998">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598741531527" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1598741531528">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598746215998" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1598746215998">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598741531528" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598746215998" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598383858166">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

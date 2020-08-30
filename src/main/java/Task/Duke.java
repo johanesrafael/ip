@@ -33,7 +33,7 @@ public class Duke {
             // take the description
             String description = at[0].split("event")[1];
             // create event task to be passed over to the actual task array
-            Deadline task = new Deadline(description,at[1]);
+            Event task = new Event(description,at[1]);
             // assign task into actual task and increment listCounter
             tasks[listCounter++] = task;
         }
