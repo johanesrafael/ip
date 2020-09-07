@@ -1,44 +1,85 @@
 package Task;
+
 import java.util.Scanner;
 
 public class Duke {
+    // introduce a constant for list size
+    public static final int MAX_LIST_SIZE = 100;
     // create task class for user's To-Do-List (max 100 items)
-    private static Task[] tasks = new Task[100];
+    private static Task[] tasks = new Task[MAX_LIST_SIZE];
     // create counter for tracking each inserted user input
     private static int listCounter = 0;
 
+    public static boolean checkForException(String userInput){
+        if(userInput.indexOf("/") == -1){
+            return true;
+        }
+        return false;
+    }
     // insert user input to the list
-    public static void insertToList(String userInput) {
-        if(userInput.startsWith("todo")) {
-            // take the description
-            String description = userInput.split("todo")[1];
-            // create To-Do task for passing over the user input to the actual task array
-            Todo task = new Todo(description);
-            // assign task into actual task and increment listCounter
-            tasks[listCounter++] = task;
-        }
-        else if(userInput.startsWith("deadline")){
-            // create array to store words split by "/by"
-            String[] by = userInput.split("/by");
-            // take the description
-            String description = by[0].split("deadline")[1];
-            // create deadline task to be passed over to the actual task array
-            Deadline task = new Deadline(description,by[1]);
-            // assign task into actual task and increment listCounter
-            tasks[listCounter++] = task;
-        }
-        else if(userInput.startsWith("event")){
-            // create array to store words split by "/at"
-            String[] at = userInput.split("/at");
-            // take the description
-            String description = at[0].split("event")[1];
-            // create event task to be passed over to the actual task array
-            Event task = new Event(description,at[1]);
-            // assign task into actual task and increment listCounter
-            tasks[listCounter++] = task;
+    public static void insertToList(String userInput) throws OtherException{
+        String userInputFirstWord = userInput.split(" ")[0];
+
+        switch(userInputFirstWord) {
+        case "todo":
+            try {
+                insertToDo(userInput);
+            } catch (ToDoException e) {
+                viewEmptyToDoMessage();
+            }
+            break;
+        case "deadline":
+            insertDeadline(userInput);
+            break;
+        case "event":
+            insertEvent(userInput);
+            break;
+        default:
+            throw new OtherException();
         }
         // print the newly added task
-        printAddedTask();
+        // printAddedTask();
+    }
+
+    private static void insertEvent(String userInput) {
+        // take the description by finding the start and end index
+        int descriptionStartIndex = userInput.indexOf(" ");
+        int descriptionEndIndex = userInput.indexOf("/at");
+        String description = userInput.substring(descriptionStartIndex + 1, descriptionEndIndex);
+        // take the event time
+        String at = userInput.substring(descriptionEndIndex + 3);
+        // create event task to be passed over to the actual task array
+        Event task = new Event(description, at);
+        // assign task into actual task and increment listCounter
+        tasks[listCounter++] = task;
+    }
+
+    private static void insertDeadline(String userInput) {
+        // take the description by finding the start and end index
+        int descriptionStartIndex = userInput.indexOf(" ");
+        int descriptionEndIndex = userInput.indexOf("/by");
+        String description = userInput.substring(descriptionStartIndex + 1, descriptionEndIndex);
+        // take the deadline
+        String by = userInput.substring(descriptionEndIndex + 3);
+        // create deadline task to be passed over to the actual task array
+        Deadline task = new Deadline(description, by);
+        // assign task into actual task and increment listCounter
+        tasks[listCounter++] = task;
+
+    }
+
+    private static void insertToDo(String userInput) throws ToDoException{
+        // take the description by finding the start index
+        int descriptionStartIndex = userInput.indexOf(" ");
+        String description = userInput.substring(descriptionStartIndex+1);
+        if(descriptionStartIndex != 4 || description.isEmpty()){
+            throw new ToDoException();
+        }
+        // create To-Do task for passing over the user input to the actual task array
+        ToDo task = new ToDo(description);
+        // assign task into actual task and increment listCounter
+        tasks[listCounter++] = task;
+
     }
 
     private static void printAddedTask() {
@@ -91,11 +132,7 @@ public class Duke {
         tasks[indexTask-1].markAsDone();
     }
 
-    public static void main(String[] args) {
-        // create logo
-        createLogo();
-        // greet
-        greet();
+    private static void handleCommand() {
         Scanner echo = new Scanner(System.in);
         // scan user input
         String userInput = echo.nextLine();
@@ -111,13 +148,34 @@ public class Duke {
             }
             else{
                 // insert into list
-                insertToList(userInput);
+                try {
+                    insertToList(userInput);
+                } catch (OtherException e){
+                    viewInvalidCommandMessage();
+                }
             }
             // ask user input
             userInput = echo.nextLine();
         }
+    }
 
+    private static void viewInvalidCommandMessage() {
+        System.out.println("\n ☹ OOPS!!! I'm sorry, but I don't know what that means :-(\n");
+    }
+
+    private static void viewEmptyToDoMessage(){
+        System.out.println("\n ☹ OOPS!!! The description of a todo cannot be empty.\n");
+    }
+
+    public static void main(String[] args) {
+        // create logo
+        createLogo();
+        // greet
+        greet();
+        handleCommand();
         // create bye message
         createByeMessage();
     }
+
+
 }
