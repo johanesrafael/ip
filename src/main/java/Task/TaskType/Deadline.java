@@ -1,4 +1,4 @@
-package Task;
+package Task.TaskType;
 
 public class Deadline extends Task {
     protected String by;

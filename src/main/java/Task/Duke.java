@@ -1,5 +1,12 @@
 package Task;
 
+import Task.Exception.OtherException;
+import Task.Exception.DukeException;
+import Task.Exception.ToDoException;
+import Task.TaskType.Task;
+import Task.TaskType.Deadline;
+import Task.TaskType.Event;
+import Task.TaskType.ToDo;
 import java.util.Scanner;
 
 public class Duke {
@@ -10,14 +17,8 @@ public class Duke {
     // create counter for tracking each inserted user input
     private static int listCounter = 0;
 
-    public static boolean checkForException(String userInput){
-        if(userInput.indexOf("/") == -1){
-            return true;
-        }
-        return false;
-    }
     // insert user input to the list
-    public static void insertToList(String userInput) throws OtherException{
+    public static void insertToList(String userInput) throws OtherException {
         String userInputFirstWord = userInput.split(" ")[0];
 
         switch(userInputFirstWord) {

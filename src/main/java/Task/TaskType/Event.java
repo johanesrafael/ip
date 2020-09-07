@@ -1,4 +1,4 @@
-package Task;
+package Task.TaskType;
 
 public class Event extends Task {
     protected String at;
