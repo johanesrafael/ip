@@ -179,6 +179,38 @@ public class Duke {
 
     }
 
+    private static void passToToDo(String userData){
+        // create To-Do task for passing over the user input to the actual task array
+        ToDo task = new ToDo(userData);
+        // assign task into actual task and increment listCounter
+        tasks[listCounter++] = task;
+    }
+    private static void passToDeadline(String userData){
+        userData = userData.replace("(","");
+        userData = userData.replace(")","");
+        int descriptionStartIndex = userData.indexOf(" ");
+        int descriptionEndIndex = userData.indexOf("by");
+        String description = userData.substring(descriptionStartIndex + 1, descriptionEndIndex);
+        // take the event time
+        String by = userData.substring(descriptionEndIndex + 2);
+        // create event task to be passed over to the actual task array
+        Deadline task = new Deadline(description, by);
+        // assign task into actual task and increment listCounter
+        tasks[listCounter++] = task;
+    }
+    private static void passToEvent(String userData){
+        userData = userData.replace("(","");
+        userData = userData.replace(")","");
+        int descriptionStartIndex = userData.indexOf(" ");
+        int descriptionEndIndex = userData.indexOf("at");
+        String description = userData.substring(descriptionStartIndex + 1, descriptionEndIndex);
+        // take the event time
+        String at = userData.substring(descriptionEndIndex + 2);
+        // create event task to be passed over to the actual task array
+        Event task = new Event(description, at);
+        // assign task into actual task and increment listCounter
+        tasks[listCounter++] = task;
+    }
     private static void insertExistingFileDataToTasks(String userData){
         char taskType = userData.charAt(1);
         switch (taskType){
