@@ -25,7 +25,7 @@ public class Duke {
     // create task class for user's To-Do-List (max 100 items)
     private static ArrayList<Task> tasks = new ArrayList<>(MAX_LIST_SIZE);
     // create counter for tracking each inserted user input
-
+    private static String path ="D:\\CEG\\SEMESTER 3\\CS2113\\Individual Project\\Saved Files";
     // insert user input to the list
     public static void insertToList(String userInput) throws OtherException, IOException {
         String userInputFirstWord = userInput.split(" ")[0];
@@ -174,7 +174,6 @@ public class Duke {
 
     private static void createFile() throws IOException {
         // hardcoded
-        String path ="D:\\CEG\\SEMESTER 3\\CS2113\\Individual Project\\Saved Files";
         File file = new File(path, "progress.txt");
         if (!file.exists()) {
             try {
@@ -197,8 +196,8 @@ public class Duke {
 
     private static void readFile() throws IOException, OtherException {
         // hardcoded
-        Path path = Paths.get("D:\\CEG\\SEMESTER 3\\CS2113\\Individual Project\\Saved Files\\progress.txt");
-        String file = Files.readString(path, StandardCharsets.UTF_8);
+        Path path2 = Paths.get(path, "progress.txt");
+        String file = Files.readString(path2, StandardCharsets.UTF_8);
         Scanner data = new Scanner(file);
         // make read by line then insert to the corresponding task
         while(data.hasNextLine()){
