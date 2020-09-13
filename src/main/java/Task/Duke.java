@@ -199,11 +199,13 @@ public class Duke {
     private static void readFile() throws IOException, OtherException, NoSuchFileException, FolderNotExistException {
         // get path
         Path path2 = Paths.get(path, fileName);
+        // find file
         File file = new File(path, fileName);
         // check file and its directory
         isFolderExisted(file);
         // change the file into string
         String fileData = Files.readString(path2, StandardCharsets.UTF_8);
+        // scan the file data
         Scanner data = new Scanner(fileData);
         // make read by line then insert to the corresponding task
         while(data.hasNextLine()){
