@@ -76,7 +76,7 @@ public class Duke {
     private static void insertToDo(String userInput) throws ToDoException{
         // take the description by finding the start index
         int descriptionStartIndex = userInput.indexOf(" ");
-        String description = userInput.substring(descriptionStartIndex+1);
+        String description = userInput.substring(descriptionStartIndex);
         if(descriptionStartIndex != 4 || description.isEmpty()){
             throw new ToDoException();
         }
@@ -176,9 +176,8 @@ public class Duke {
         Path path = Paths.get("D:\\CEG\\SEMESTER 3\\CS2113\\Individual Project\\Saved Files\\progress.txt");
         String actual = Files.readString(path, StandardCharsets.UTF_8);
         Scanner file = new Scanner(actual);
-        // System.out.println(actual); // need to make read by line then insert to the corresponding task type
+        // make read by line then insert to the corresponding task type
         while(file.hasNextLine()){
-            //System.out.println(file.nextLine());
             insertExistingFileDataToTasks(file.nextLine());
         }
         file.close();
@@ -186,14 +185,14 @@ public class Duke {
 
     private static void isDone(String userDataSymbol){
         if(userDataSymbol.equals("\u2713")){
-            tasks[listCounter-1].setDone();
+            tasks[listCounter].setDone();
         }
     }
 
     private static void passToToDo(String userData){
-        userData = userData.split(" ")[1];
+        String description = userData.split("]")[2];
         // create To-Do task for passing over the user input to the actual task array
-        ToDo task = new ToDo(userData);
+        ToDo task = new ToDo(description);
         // assign task into actual task and increment listCounter
         tasks[listCounter++] = task;
     }
@@ -201,12 +200,12 @@ public class Duke {
     private static void passToDeadline(String userData){
         userData = userData.replace("(","");
         userData = userData.replace(")","");
-        String isDone = userData.substring(4,4);
+        String isDone = userData.substring(3,5);
         int descriptionStartIndex = userData.indexOf(" ");
-        int descriptionEndIndex = userData.indexOf("by");
-        String description = userData.substring(descriptionStartIndex + 1, descriptionEndIndex);
+        int descriptionEndIndex = userData.indexOf("by:");
+        String description = userData.substring(descriptionStartIndex, descriptionEndIndex);
         // take the event time
-        String by = userData.substring(descriptionEndIndex + 2);
+        String by = userData.substring(descriptionEndIndex + 3);
         // create event task to be passed over to the actual task array
         Deadline task = new Deadline(description, by);
         // assign task into actual task and increment listCounter
@@ -218,10 +217,10 @@ public class Duke {
         userData = userData.replace("(","");
         userData = userData.replace(")","");
         int descriptionStartIndex = userData.indexOf(" ");
-        int descriptionEndIndex = userData.indexOf("at");
-        String description = userData.substring(descriptionStartIndex + 1, descriptionEndIndex);
+        int descriptionEndIndex = userData.indexOf("at:");
+        String description = userData.substring(descriptionStartIndex, descriptionEndIndex);
         // take the event time
-        String at = userData.substring(descriptionEndIndex + 2);
+        String at = userData.substring(descriptionEndIndex + 3);
         // create event task to be passed over to the actual task array
         Event task = new Event(description, at);
         // assign task into actual task and increment listCounter
