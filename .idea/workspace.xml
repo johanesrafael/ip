@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="944e3822-5dd0-44b9-b14a-06d2eb424e12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task/TaskType/ToDo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Saved Files/progress.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/Deadline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/TaskType/Deadline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IP/Task/Duke.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IP/Task/Duke.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Task/Duke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Duke.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Exception/DukeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/TaskType/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/OtherException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Exception/OtherException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/TaskType/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/ToDo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/ToDoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Exception/ToDoException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,15 +65,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -269,22 +261,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1599207260800" />
-    <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1599459585013">
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1600023011283">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1599459585013" />
-    <state width="1877" height="435" key="GridCell.Tab.0.center" timestamp="1599459585013">
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600023011283" />
+    <state width="1877" height="435" key="GridCell.Tab.0.center" timestamp="1600023011283">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1599459585013" />
-    <state width="1877" height="435" key="GridCell.Tab.0.left" timestamp="1599459585012">
+    <state width="1877" height="435" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600023011283" />
+    <state width="1877" height="435" key="GridCell.Tab.0.left" timestamp="1600023011283">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1599459585012" />
-    <state width="1877" height="435" key="GridCell.Tab.0.right" timestamp="1599459585013">
+    <state width="1877" height="435" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600023011283" />
+    <state width="1877" height="435" key="GridCell.Tab.0.right" timestamp="1600023011283">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1599459585013" />
+    <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600023011283" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598383858166">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

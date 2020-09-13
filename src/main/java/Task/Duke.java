@@ -7,6 +7,10 @@ import Task.TaskType.Task;
 import Task.TaskType.Deadline;
 import Task.TaskType.Event;
 import Task.TaskType.ToDo;
+
+import java.io.*;
+import java.nio.charset.*;
+import java.nio.file.*;
 import java.util.Scanner;
 
 public class Duke {
@@ -160,6 +164,20 @@ public class Duke {
         }
     }
 
+    private static void createFile() throws IOException {
+        //String hello = "Hello World";
+        Path path = Paths.get("D:\\CEG\\SEMESTER 3\\CS2113\\Individual Project\\Saved Files\\progress.txt");
+        //Files.write(path, hello.getBytes());
+        //String appenddu = "\n jello";
+        //Files.write(path, appenddu.getBytes(),StandardOpenOption.APPEND);
+    }
+
+    private static void readFile() throws IOException {
+        Path path = Paths.get("D:\\CEG\\SEMESTER 3\\CS2113\\Individual Project\\Saved Files\\progress.txt");
+        String actual = Files.readString(path, StandardCharsets.UTF_8);
+        System.out.println(actual);
+    }
+
     private static void viewInvalidCommandMessage() {
         System.out.println("\n ☹ OOPS!!! I'm sorry, but I don't know what that means :-(\n");
     }
@@ -168,15 +186,15 @@ public class Duke {
         System.out.println("\n ☹ OOPS!!! The description of a todo cannot be empty.\n");
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         // create logo
         createLogo();
         // greet
         greet();
+        // createFile();
+        readFile();
         handleCommand();
         // create bye message
         createByeMessage();
     }
-
-
 }
