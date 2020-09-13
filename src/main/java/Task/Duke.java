@@ -165,22 +165,19 @@ public class Duke {
     }
 
     private static void createFile() throws IOException {
-        //String hello = "Hello World";
         Path path = Paths.get("D:\\CEG\\SEMESTER 3\\CS2113\\Individual Project\\Saved Files\\progress.txt");
-        //Files.write(path, hello.getBytes());
-        //String appenddu = "\n jello";
-        //Files.write(path, appenddu.getBytes(),StandardOpenOption.APPEND);
+
     }
 
     private static void readFile() throws IOException, OtherException {
         Path path = Paths.get("D:\\CEG\\SEMESTER 3\\CS2113\\Individual Project\\Saved Files\\progress.txt");
-        String actual = Files.readString(path, StandardCharsets.UTF_8);
-        Scanner file = new Scanner(actual);
+        String file = Files.readString(path, StandardCharsets.UTF_8);
+        Scanner data = new Scanner(file);
         // make read by line then insert to the corresponding task type
-        while(file.hasNextLine()){
-            insertExistingFileDataToTasks(file.nextLine());
+        while(data.hasNextLine()){
+            insertExistingFileDataToTasks(data.nextLine());
         }
-        file.close();
+        data.close();
     }
 
     private static void isDone(String userDataSymbol){
