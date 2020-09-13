@@ -19,7 +19,6 @@ public class Duke {
     // create task class for user's To-Do-List (max 100 items)
     private static ArrayList<Task> tasks = new ArrayList<>(MAX_LIST_SIZE);
     // create counter for tracking each inserted user input
-    // private static int listCounter = 0;
 
     // insert user input to the list
     public static void insertToList(String userInput) throws OtherException, IOException {
@@ -199,7 +198,7 @@ public class Duke {
         data.close();
     }
 
-    private static void isDone(String userDataSymbol){
+    private static void isTaskDone(String userDataSymbol){
         if(userDataSymbol.equals("\u2713")){
             tasks.get(tasks.size()-1).setDone();
         }
@@ -207,16 +206,19 @@ public class Duke {
 
     private static void passToToDo(String userData){
         String description = userData.split("]")[2];
+        String isTaskDone = userData.substring(4,5);
         // create To-Do task for passing over the user input to the actual task array
         ToDo task = new ToDo(description);
         // assign task into actual task and increment listCounter
         tasks.add(task);
+        isTaskDone(isTaskDone);
     }
 
     private static void passToDeadline(String userData){
         userData = userData.replace("(","");
         userData = userData.replace(")","");
-        String isDone = userData.substring(3,5);
+        String isTaskDone = userData.substring(4,5);
+        // System.out.println(isTaskDone);
         int descriptionStartIndex = userData.indexOf(" ");
         int descriptionEndIndex = userData.indexOf("by:");
         String description = userData.substring(descriptionStartIndex, descriptionEndIndex);
@@ -226,12 +228,13 @@ public class Duke {
         Deadline task = new Deadline(description, by);
         // assign task into actual task and increment listCounter
         tasks.add(task);
-        //isDone(isDone);
+        isTaskDone(isTaskDone);
     }
 
     private static void passToEvent(String userData){
         userData = userData.replace("(","");
         userData = userData.replace(")","");
+        String isTaskDone = userData.substring(4,5);
         int descriptionStartIndex = userData.indexOf(" ");
         int descriptionEndIndex = userData.indexOf("at:");
         String description = userData.substring(descriptionStartIndex, descriptionEndIndex);
@@ -241,6 +244,7 @@ public class Duke {
         Event task = new Event(description, at);
         // assign task into actual task and increment listCounter
         tasks.add(task);
+        isTaskDone(isTaskDone);
     }
 
     private static void insertExistingFileDataToTasks(String userData) throws OtherException {
