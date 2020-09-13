@@ -51,7 +51,7 @@ public class Duke {
         // take the description by finding the start and end index
         int descriptionStartIndex = userInput.indexOf(" ");
         int descriptionEndIndex = userInput.indexOf("/at");
-        String description = userInput.substring(descriptionStartIndex + 1, descriptionEndIndex);
+        String description = userInput.substring(descriptionStartIndex, descriptionEndIndex);
         // take the event time
         String at = userInput.substring(descriptionEndIndex + 3);
         // create event task to be passed over to the actual task array
@@ -64,7 +64,7 @@ public class Duke {
         // take the description by finding the start and end index
         int descriptionStartIndex = userInput.indexOf(" ");
         int descriptionEndIndex = userInput.indexOf("/by");
-        String description = userInput.substring(descriptionStartIndex + 1, descriptionEndIndex);
+        String description = userInput.substring(descriptionStartIndex, descriptionEndIndex);
         // take the deadline
         String by = userInput.substring(descriptionEndIndex + 3);
         // create deadline task to be passed over to the actual task array
@@ -166,8 +166,25 @@ public class Duke {
     }
 
     private static void createFile() throws IOException {
-        Path path = Paths.get("D:\\CEG\\SEMESTER 3\\CS2113\\Individual Project\\Saved Files\\progress.txt");
-        //Files.write(path, tasks);
+        String path ="D:\\CEG\\SEMESTER 3\\CS2113\\Individual Project\\Saved Files";
+        File file = new File(path, "progress.txt");
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        try {
+            BufferedWriter newFile = new BufferedWriter(new FileWriter(file.getAbsoluteFile()));
+            for(int i = 0; i < tasks.size(); i++){
+                newFile.write(tasks.get(i).toString());
+                newFile.newLine();
+            }
+            newFile.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private static void readFile() throws IOException, OtherException {
