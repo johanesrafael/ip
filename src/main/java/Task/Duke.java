@@ -179,13 +179,21 @@ public class Duke {
 
     }
 
+    private static void isDone(String userDataSymbol){
+        if(userDataSymbol.equals("\u2713")){
+            tasks[listCounter-1].setDone();
+        }
+    }
+
     private static void passToToDo(String userData){
         // create To-Do task for passing over the user input to the actual task array
         ToDo task = new ToDo(userData);
         // assign task into actual task and increment listCounter
         tasks[listCounter++] = task;
     }
+
     private static void passToDeadline(String userData){
+
         userData = userData.replace("(","");
         userData = userData.replace(")","");
         int descriptionStartIndex = userData.indexOf(" ");
@@ -198,6 +206,7 @@ public class Duke {
         // assign task into actual task and increment listCounter
         tasks[listCounter++] = task;
     }
+
     private static void passToEvent(String userData){
         userData = userData.replace("(","");
         userData = userData.replace(")","");
@@ -211,22 +220,21 @@ public class Duke {
         // assign task into actual task and increment listCounter
         tasks[listCounter++] = task;
     }
-    private static void insertExistingFileDataToTasks(String userData){
+
+    private static void insertExistingFileDataToTasks(String userData) throws OtherException {
         char taskType = userData.charAt(1);
         switch (taskType){
         case 'T':
-            try {
-                insertToDo(userData);
-            } catch (ToDoException e) {
-                e.printStackTrace();
-            }
+            passToToDo(userData);
             break;
         case 'D':
-            //insertDeadline();
+            passToDeadline(userData);
             break;
         case 'E':
+            passToEvent(userData);
             break;
         default:
+            throw new OtherException();
         }
     }
 

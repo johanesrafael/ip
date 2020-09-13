@@ -23,6 +23,10 @@ public class Task {
                 ,getStatusIcon(),description);
     }
 
+    public void setDone() {
+        isDone = true;
+    }
+
     public String getDescription(){
         return description;
     }
