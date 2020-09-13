@@ -139,8 +139,9 @@ public class Duke {
         String indexString = userInput.split(" ")[1];
         // change the word into integer
         Integer indexTask = Integer.parseInt(indexString);
-        // delete
+        // view delete message first
         tasks.get(indexTask-1).deleteTaskMessage();
+        // erase the selected task from the array
         tasks.remove(indexTask-1);
     }
 
