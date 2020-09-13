@@ -19,8 +19,12 @@ public class Task {
         // print the marked task
         System.out.printf("    \n" +
                 "   Nice! I've marked this task as done:\n" +
-                "\t[%s] %s\n"
-                ,getStatusIcon(),description);
+                "\t" + toString() +"\n");
+    }
+
+    public void deleteTask(){
+        System.out.println("     Noted. I've removed this task: \n" +
+                "     " + toString() + "\n");
     }
 
     public String getDescription(){
