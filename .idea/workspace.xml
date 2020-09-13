@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="944e3822-5dd0-44b9-b14a-06d2eb424e12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Saved Files/progress.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Saved Files/progress.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task/Exception/FolderNotExistException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IP/Task/Duke.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IP/Task/Duke.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Task/Duke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Duke.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -320,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600035574759</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Level-7. Added some comments in methods">
+      <created>1600035746661</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1600035746661</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +357,8 @@
     <MESSAGE value="Level-7. Add import class" />
     <MESSAGE value="Level-7. Hardcoded paths" />
     <MESSAGE value="Level-7. Introduced new private path variable and implemented relative path" />
-    <option name="LAST_COMMIT_MESSAGE" value="Level-7. Introduced new private path variable and implemented relative path" />
+    <MESSAGE value="Level-7. Added some comments in methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Level-7. Added some comments in methods" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="183" width="816" height="729" key="#Intentions" timestamp="1600031249572">
@@ -375,30 +385,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1599459036434" />
-    <state x="585" y="93" key="CommitChangelistDialog2" timestamp="1600035574044">
+    <state x="585" y="93" key="CommitChangelistDialog2" timestamp="1600035745935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="93" key="CommitChangelistDialog2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600035574044" />
+    <state x="585" y="93" key="CommitChangelistDialog2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600035745935" />
     <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1599207260800">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1599207260800" />
-    <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1600035610056">
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1600038045789">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600035610056" />
-    <state width="1877" height="435" key="GridCell.Tab.0.center" timestamp="1600035610055">
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038045789" />
+    <state width="1877" height="435" key="GridCell.Tab.0.center" timestamp="1600038045789">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600035610055" />
-    <state width="1877" height="435" key="GridCell.Tab.0.left" timestamp="1600035610055">
+    <state width="1877" height="435" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038045789" />
+    <state width="1877" height="435" key="GridCell.Tab.0.left" timestamp="1600038045789">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600035610055" />
-    <state width="1877" height="435" key="GridCell.Tab.0.right" timestamp="1600035610056">
+    <state width="1877" height="435" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038045789" />
+    <state width="1877" height="435" key="GridCell.Tab.0.right" timestamp="1600038045789">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600035610056" />
+    <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038045789" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598383858166">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -431,14 +441,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598507099373" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1600034928681">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1600035750707">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600034928681" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600035750707" />
     <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599462155197">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1599462155197" />
+    <state x="499" y="261" width="922" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1600037529802">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="499" y="261" width="922" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600037529802" />
     <state x="1165" y="298" key="extract.method.dialog" timestamp="1599454822948">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -459,5 +473,15 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600024288116" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.nio.file.NoSuchFileException" package="java.nio.file" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

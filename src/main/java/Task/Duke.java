@@ -1,8 +1,6 @@
 package Task;
 
-import Task.Exception.OtherException;
-import Task.Exception.DukeException;
-import Task.Exception.ToDoException;
+import Task.Exception.*;
 import Task.TaskType.Task;
 import Task.TaskType.Deadline;
 import Task.TaskType.Event;
@@ -13,9 +11,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -24,8 +20,12 @@ public class Duke {
     public static final int MAX_LIST_SIZE = 100;
     // create task class for user's To-Do-List (max 100 items)
     private static ArrayList<Task> tasks = new ArrayList<>(MAX_LIST_SIZE);
-    // create counter for tracking each inserted user input
-    private static String path ="D:\\CEG\\SEMESTER 3\\CS2113\\Individual Project\\Saved Files";
+    // create relative path
+    private static String folder = "\\data";
+    private static String path ="D:" + folder;
+    // create file name variable
+    private static  String fileName = "progress.txt";
+
     // insert user input to the list
     public static void insertToList(String userInput) throws OtherException, IOException {
         String userInputFirstWord = userInput.split(" ")[0];
@@ -174,7 +174,7 @@ public class Duke {
 
     private static void createFile() throws IOException {
         // find file
-        File file = new File(path, "progress.txt");
+        File file = new File(path, fileName);
         if (!file.exists()) {
             try {
                 // make new file
@@ -196,16 +196,30 @@ public class Duke {
         }
     }
 
-    private static void readFile() throws IOException, OtherException {
+    private static void readFile() throws IOException, OtherException, NoSuchFileException, FolderNotExistException {
         // get path
-        Path path2 = Paths.get(path, "progress.txt");
-        String file = Files.readString(path2, StandardCharsets.UTF_8);
-        Scanner data = new Scanner(file);
+        Path path2 = Paths.get(path, fileName);
+        File file = new File(path, fileName);
+        // check file and its directory
+        isFolderExisted(file);
+        // change the file into string
+        String fileData = Files.readString(path2, StandardCharsets.UTF_8);
+        Scanner data = new Scanner(fileData);
         // make read by line then insert to the corresponding task
         while(data.hasNextLine()){
             insertExistingFileDataToTasks(data.nextLine());
         }
         data.close();
+    }
+
+    private static void isFolderExisted(File file) throws IOException {
+        if (!file.exists() && !file.isDirectory()) {
+            // make new directory
+            File dir = new File(folder);
+            dir.mkdir();
+            // create the file
+            createFile();
+        }
     }
 
     private static void isTaskDone(String userDataSymbol){
@@ -301,7 +315,11 @@ public class Duke {
         // greet
         greet();
         // read file first
-        readFile();
+        try {
+            readFile();
+        } catch (FolderNotExistException e) {
+            e.printStackTrace();
+        }
         handleCommand();
         // create bye message
         createByeMessage();
