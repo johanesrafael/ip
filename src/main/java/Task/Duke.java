@@ -173,6 +173,7 @@ public class Duke {
     }
 
     private static void createFile() throws IOException {
+        // hardcoded
         String path ="D:\\CEG\\SEMESTER 3\\CS2113\\Individual Project\\Saved Files";
         File file = new File(path, "progress.txt");
         if (!file.exists()) {
@@ -195,6 +196,7 @@ public class Duke {
     }
 
     private static void readFile() throws IOException, OtherException {
+        // hardcoded
         Path path = Paths.get("D:\\CEG\\SEMESTER 3\\CS2113\\Individual Project\\Saved Files\\progress.txt");
         String file = Files.readString(path, StandardCharsets.UTF_8);
         Scanner data = new Scanner(file);
