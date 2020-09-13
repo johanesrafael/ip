@@ -22,7 +22,7 @@ public class Task {
                 "\t" + toString() +"\n");
     }
 
-    public void deleteTask(){
+    public void deleteTaskMessage(){
         System.out.println("     Noted. I've removed this task: \n" +
                 "     " + toString() + "\n");
     }

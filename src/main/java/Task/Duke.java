@@ -140,8 +140,8 @@ public class Duke {
         // change the word into integer
         Integer indexTask = Integer.parseInt(indexString);
         // delete
-        tasks.get(indexTask-1).deleteTask();
-
+        tasks.get(indexTask-1).deleteTaskMessage();
+        tasks.remove(indexTask-1);
     }
 
     private static void handleCommand() {
