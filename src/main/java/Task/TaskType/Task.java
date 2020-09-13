@@ -24,7 +24,7 @@ public class Task {
     }
 
     public void setDone() {
-        isDone = true;
+        this.isDone = true;
     }
 
     public String getDescription(){

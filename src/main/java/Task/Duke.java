@@ -11,18 +11,18 @@ import Task.TaskType.ToDo;
 import java.io.*;
 import java.nio.charset.*;
 import java.nio.file.*;
-import java.util.Scanner;
+import java.util.*;
 
 public class Duke {
     // introduce a constant for list size
     public static final int MAX_LIST_SIZE = 100;
     // create task class for user's To-Do-List (max 100 items)
-    private static Task[] tasks = new Task[MAX_LIST_SIZE];
+    private static ArrayList<Task> tasks = new ArrayList<>(MAX_LIST_SIZE);
     // create counter for tracking each inserted user input
-    private static int listCounter = 0;
+    // private static int listCounter = 0;
 
     // insert user input to the list
-    public static void insertToList(String userInput) throws OtherException {
+    public static void insertToList(String userInput) throws OtherException, IOException {
         String userInputFirstWord = userInput.split(" ")[0];
 
         switch(userInputFirstWord) {
@@ -42,6 +42,7 @@ public class Duke {
         default:
             throw new OtherException();
         }
+        createFile();
         // print the newly added task
         // printAddedTask();
     }
@@ -56,7 +57,7 @@ public class Duke {
         // create event task to be passed over to the actual task array
         Event task = new Event(description, at);
         // assign task into actual task and increment listCounter
-        tasks[listCounter++] = task;
+        tasks.add(task);
     }
 
     private static void insertDeadline(String userInput) {
@@ -69,7 +70,7 @@ public class Duke {
         // create deadline task to be passed over to the actual task array
         Deadline task = new Deadline(description, by);
         // assign task into actual task and increment listCounter
-        tasks[listCounter++] = task;
+        tasks.add(task);
 
     }
 
@@ -83,27 +84,27 @@ public class Duke {
         // create To-Do task for passing over the user input to the actual task array
         ToDo task = new ToDo(description);
         // assign task into actual task and increment listCounter
-        tasks[listCounter++] = task;
+        tasks.add(task);
 
     }
 
     private static void printAddedTask() {
-        if (listCounter < 2) {
+        if (tasks.size() < 2) {
             System.out.println("   Got it. I've added this task:\n\t"
-                    + tasks[listCounter-1] + "\n   Now you have "
-                    + listCounter + " task in the list.\n");
+                    + tasks.get(0) + "\n   Now you have "
+                    + tasks.size() + " task in the list.\n");
         } else {
             System.out.println("   Got it. I've added this task:\n\t"
-                    + tasks[listCounter-1] + "\n   Now you have "
-                    + listCounter + " tasks in the list.\n");
+                    + tasks.get(tasks.size()-1) + "\n   Now you have "
+                    + tasks.size() + " tasks in the list.\n");
         }
     }
 
     // view tasks
     public static void getList(){
         System.out.println("   Here are the tasks in your list:\n");
-        for(int i = 0; i < listCounter; i++){
-            System.out.println("   " + (i + 1) + ". " + tasks[i]);
+        for(int i = 0; i < tasks.size(); i++){
+            System.out.println("   " + (i + 1) + ". " + tasks.get(i));
         }
     }
 
@@ -134,7 +135,7 @@ public class Duke {
         // change the word into integer
         Integer indexTask = Integer.parseInt(indexString);
         // mark task as done
-        tasks[indexTask-1].markAsDone();
+        tasks.get(indexTask - 1).markAsDone();
     }
 
     private static void handleCommand() {
@@ -155,7 +156,7 @@ public class Duke {
                 // insert into list
                 try {
                     insertToList(userInput);
-                } catch (OtherException e){
+                } catch (OtherException | IOException e){
                     viewInvalidCommandMessage();
                 }
             }
@@ -166,7 +167,7 @@ public class Duke {
 
     private static void createFile() throws IOException {
         Path path = Paths.get("D:\\CEG\\SEMESTER 3\\CS2113\\Individual Project\\Saved Files\\progress.txt");
-
+        //Files.write(path, tasks);
     }
 
     private static void readFile() throws IOException, OtherException {
@@ -182,7 +183,7 @@ public class Duke {
 
     private static void isDone(String userDataSymbol){
         if(userDataSymbol.equals("\u2713")){
-            tasks[listCounter].setDone();
+            tasks.get(tasks.size()-1).setDone();
         }
     }
 
@@ -191,7 +192,7 @@ public class Duke {
         // create To-Do task for passing over the user input to the actual task array
         ToDo task = new ToDo(description);
         // assign task into actual task and increment listCounter
-        tasks[listCounter++] = task;
+        tasks.add(task);
     }
 
     private static void passToDeadline(String userData){
@@ -206,8 +207,8 @@ public class Duke {
         // create event task to be passed over to the actual task array
         Deadline task = new Deadline(description, by);
         // assign task into actual task and increment listCounter
-        tasks[listCounter++] = task;
-        isDone(isDone);
+        tasks.add(task);
+        //isDone(isDone);
     }
 
     private static void passToEvent(String userData){
@@ -221,7 +222,7 @@ public class Duke {
         // create event task to be passed over to the actual task array
         Event task = new Event(description, at);
         // assign task into actual task and increment listCounter
-        tasks[listCounter++] = task;
+        tasks.add(task);
     }
 
     private static void insertExistingFileDataToTasks(String userData) throws OtherException {
