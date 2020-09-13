@@ -8,10 +8,16 @@ import Task.TaskType.Deadline;
 import Task.TaskType.Event;
 import Task.TaskType.ToDo;
 
-import java.io.*;
-import java.nio.charset.*;
-import java.nio.file.*;
-import java.util.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Duke {
     // introduce a constant for list size
@@ -158,6 +164,7 @@ public class Duke {
                 } catch (OtherException | IOException e){
                     viewInvalidCommandMessage();
                 }
+                // print newly added task
                 printAddedTask();
             }
             // ask user input
