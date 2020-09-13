@@ -1,6 +1,7 @@
 package Task;
 
-import Task.Exception.*;
+import Task.Exception.OtherException;
+import Task.Exception.ToDoException;
 import Task.TaskType.Task;
 import Task.TaskType.Deadline;
 import Task.TaskType.Event;
@@ -11,7 +12,10 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.*;
+import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -196,7 +200,7 @@ public class Duke {
         }
     }
 
-    private static void readFile() throws IOException, OtherException, NoSuchFileException, FolderNotExistException {
+    private static void readFile() throws IOException, OtherException{
         // get path
         Path path2 = Paths.get(path, fileName);
         // find file
@@ -317,11 +321,7 @@ public class Duke {
         // greet
         greet();
         // read file first
-        try {
-            readFile();
-        } catch (FolderNotExistException e) {
-            e.printStackTrace();
-        }
+        readFile();
         handleCommand();
         // create bye message
         createByeMessage();

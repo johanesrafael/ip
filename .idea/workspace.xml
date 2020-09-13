@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="944e3822-5dd0-44b9-b14a-06d2eb424e12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Task/Duke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Duke.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task/Exception/FolderNotExistException.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600038329175</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Level-7. Added isFolderExisted method">
+      <created>1600038927160</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1600038927160</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,34 +394,34 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="640" y="261" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598369548204" />
-    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599459036434">
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600038993757">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1599459036434" />
-    <state x="585" y="93" key="CommitChangelistDialog2" timestamp="1600038328392">
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038993757" />
+    <state x="585" y="93" key="CommitChangelistDialog2" timestamp="1600038926363">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="93" key="CommitChangelistDialog2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038328392" />
+    <state x="585" y="93" key="CommitChangelistDialog2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038926363" />
     <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1599207260800">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1599207260800" />
-    <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1600038298474">
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1600038928596">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038298474" />
-    <state width="1877" height="435" key="GridCell.Tab.0.center" timestamp="1600038298474">
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038928596" />
+    <state width="1877" height="435" key="GridCell.Tab.0.center" timestamp="1600038928595">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038298474" />
-    <state width="1877" height="435" key="GridCell.Tab.0.left" timestamp="1600038298474">
+    <state width="1877" height="435" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038928595" />
+    <state width="1877" height="435" key="GridCell.Tab.0.left" timestamp="1600038928595">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038298474" />
-    <state width="1877" height="435" key="GridCell.Tab.0.right" timestamp="1600038298474">
+    <state width="1877" height="435" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038928595" />
+    <state width="1877" height="435" key="GridCell.Tab.0.right" timestamp="1600038928596">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038298474" />
+    <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038928596" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598383858166">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
