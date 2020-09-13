@@ -138,7 +138,7 @@ public class Duke {
         tasks.get(indexTask - 1).markAsDone();
     }
 
-    private static void handleCommand() {
+    private static void handleCommand() throws IOException {
         Scanner echo = new Scanner(System.in);
         // scan user input
         String userInput = echo.nextLine();
@@ -151,6 +151,7 @@ public class Duke {
             }
             else if(userInput.startsWith("done")){
                 setDone(userInput);
+                createFile();
             }
             else{
                 // insert into list
