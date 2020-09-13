@@ -172,11 +172,16 @@ public class Duke {
         //Files.write(path, appenddu.getBytes(),StandardOpenOption.APPEND);
     }
 
-    private static void readFile() throws IOException {
+    private static void readFile() throws IOException, OtherException {
         Path path = Paths.get("D:\\CEG\\SEMESTER 3\\CS2113\\Individual Project\\Saved Files\\progress.txt");
         String actual = Files.readString(path, StandardCharsets.UTF_8);
-        System.out.println(actual); // need to make read by line then insert to the corresponding task type
-
+        Scanner file = new Scanner(actual);
+        // System.out.println(actual); // need to make read by line then insert to the corresponding task type
+        while(file.hasNextLine()){
+            //System.out.println(file.nextLine());
+            insertExistingFileDataToTasks(file.nextLine());
+        }
+        file.close();
     }
 
     private static void isDone(String userDataSymbol){
@@ -186,6 +191,7 @@ public class Duke {
     }
 
     private static void passToToDo(String userData){
+        userData = userData.split(" ")[1];
         // create To-Do task for passing over the user input to the actual task array
         ToDo task = new ToDo(userData);
         // assign task into actual task and increment listCounter
@@ -193,9 +199,9 @@ public class Duke {
     }
 
     private static void passToDeadline(String userData){
-
         userData = userData.replace("(","");
         userData = userData.replace(")","");
+        String isDone = userData.substring(4,4);
         int descriptionStartIndex = userData.indexOf(" ");
         int descriptionEndIndex = userData.indexOf("by");
         String description = userData.substring(descriptionStartIndex + 1, descriptionEndIndex);
@@ -205,6 +211,7 @@ public class Duke {
         Deadline task = new Deadline(description, by);
         // assign task into actual task and increment listCounter
         tasks[listCounter++] = task;
+        isDone(isDone);
     }
 
     private static void passToEvent(String userData){
@@ -247,7 +254,7 @@ public class Duke {
         System.out.println("\n ☹ OOPS!!! The description of a todo cannot be empty.\n");
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, OtherException {
         // create logo
         createLogo();
         // greet
