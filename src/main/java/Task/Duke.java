@@ -175,8 +175,29 @@ public class Duke {
     private static void readFile() throws IOException {
         Path path = Paths.get("D:\\CEG\\SEMESTER 3\\CS2113\\Individual Project\\Saved Files\\progress.txt");
         String actual = Files.readString(path, StandardCharsets.UTF_8);
-        System.out.println(actual);
+        System.out.println(actual); // need to make read by line then insert to the corresponding task type
+
     }
+
+    private static void insertExistingFileDataToTasks(String userData){
+        char taskType = userData.charAt(1);
+        switch (taskType){
+        case 'T':
+            try {
+                insertToDo(userData);
+            } catch (ToDoException e) {
+                e.printStackTrace();
+            }
+            break;
+        case 'D':
+            //insertDeadline();
+            break;
+        case 'E':
+            break;
+        default:
+        }
+    }
+
 
     private static void viewInvalidCommandMessage() {
         System.out.println("\n ☹ OOPS!!! I'm sorry, but I don't know what that means :-(\n");
