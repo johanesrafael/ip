@@ -51,6 +51,7 @@ public class Duke {
         default:
             throw new OtherException();
         }
+        // update file
         createFile();
     }
 
