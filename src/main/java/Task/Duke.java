@@ -16,7 +16,6 @@ public class Duke {
     // create task class for user's To-Do-List (max 100 items)
     private static ArrayList<Task> tasks = new ArrayList<>(MAX_LIST_SIZE);
     // create counter for tracking each inserted user input
-    //private static int listCounter = 0;
 
     // insert user input to the list
     public static void insertToList(String userInput) throws OtherException {
@@ -39,8 +38,6 @@ public class Duke {
         default:
             throw new OtherException();
         }
-        // print the newly added task
-        // printAddedTask();
     }
 
     private static void insertEvent(String userInput) {
@@ -192,6 +189,4 @@ public class Duke {
         // create bye message
         createByeMessage();
     }
-
-
 }

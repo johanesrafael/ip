@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="944e3822-5dd0-44b9-b14a-06d2eb424e12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/IP/Task/Duke.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IP/Task/Duke.class" afterDir="false" />
+    <list default="true" id="944e3822-5dd0-44b9-b14a-06d2eb424e12" name="Default Changelist" comment="Commented an unused variable">
       <change beforePath="$PROJECT_DIR$/src/main/java/Task/Duke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Duke.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/TaskType/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/TaskType/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +94,7 @@
       <workItem from="1599811324125" duration="605000" />
       <workItem from="1599815190555" duration="718000" />
       <workItem from="1600007752757" duration="1402000" />
-      <workItem from="1600014383503" duration="2367000" />
+      <workItem from="1600014383503" duration="2716000" />
     </task>
     <task id="LOCAL-00001" summary="Level 3">
       <created>1598227365775</created>
@@ -224,7 +222,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600016651722</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added delete methode and delete message in Task">
+      <created>1600016819594</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1600016819594</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added comments">
+      <created>1600016915127</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1600016915127</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +251,9 @@
     <MESSAGE value="Level-5. Handle Errors" />
     <MESSAGE value="A-Packages." />
     <MESSAGE value="Reformated with ArrayList java collection class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reformated with ArrayList java collection class" />
+    <MESSAGE value="Added delete methode and delete message in Task" />
+    <MESSAGE value="Added comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comments" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="180" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598381398657">
@@ -262,10 +276,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1599459036434" />
-    <state x="585" y="93" key="CommitChangelistDialog2" timestamp="1600016650895">
+    <state x="585" y="93" key="CommitChangelistDialog2" timestamp="1600017095168">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="93" key="CommitChangelistDialog2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600016650895" />
+    <state x="585" y="93" key="CommitChangelistDialog2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600017095168" />
     <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1599207260800">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -318,10 +332,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598507099373" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1600016654110">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1600016916354">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600016654110" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600016916354" />
     <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599462155197">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
