@@ -27,6 +27,10 @@ public class Task {
                 "     " + toString() + "\n");
     }
 
+    public void setDone() {
+        this.isDone = true;
+    }
+
     public String getDescription(){
         return description;
     }
