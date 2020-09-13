@@ -1,7 +1,8 @@
 [T][✘] read book
-[D][✓] return book      (by:      June 6th)
-[E][✓] project meeting      (at:      Mon 2-4pm)
+[D][✓] return book       (by:       June 6th)
+[E][✓] project meeting       (at:       Mon 2-4pm)
 [T][✘] homework assignment
 [T][✓] Gaming
 [T][✘] typing race
 [T][✘] list
+[T][✘] stuff

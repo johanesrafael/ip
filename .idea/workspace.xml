@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="944e3822-5dd0-44b9-b14a-06d2eb424e12" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Saved Files/progress.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Saved Files/progress.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Task/Duke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Duke.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -312,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600034925563</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Level-7. Introduced new private path variable and implemented relative path">
+      <created>1600035574759</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1600035574759</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +347,8 @@
     <MESSAGE value="Level-7. Added newly added task message method" />
     <MESSAGE value="Level-7. Add import class" />
     <MESSAGE value="Level-7. Hardcoded paths" />
-    <option name="LAST_COMMIT_MESSAGE" value="Level-7. Hardcoded paths" />
+    <MESSAGE value="Level-7. Introduced new private path variable and implemented relative path" />
+    <option name="LAST_COMMIT_MESSAGE" value="Level-7. Introduced new private path variable and implemented relative path" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="183" width="816" height="729" key="#Intentions" timestamp="1600031249572">
@@ -366,30 +375,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1599459036434" />
-    <state x="585" y="93" key="CommitChangelistDialog2" timestamp="1600034924835">
+    <state x="585" y="93" key="CommitChangelistDialog2" timestamp="1600035574044">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="93" key="CommitChangelistDialog2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600034924835" />
+    <state x="585" y="93" key="CommitChangelistDialog2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600035574044" />
     <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1599207260800">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1599207260800" />
-    <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1600034473719">
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1600035610056">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600034473719" />
-    <state width="1877" height="435" key="GridCell.Tab.0.center" timestamp="1600034473719">
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600035610056" />
+    <state width="1877" height="435" key="GridCell.Tab.0.center" timestamp="1600035610055">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600034473719" />
-    <state width="1877" height="435" key="GridCell.Tab.0.left" timestamp="1600034473719">
+    <state width="1877" height="435" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600035610055" />
+    <state width="1877" height="435" key="GridCell.Tab.0.left" timestamp="1600035610055">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600034473719" />
-    <state width="1877" height="435" key="GridCell.Tab.0.right" timestamp="1600034473719">
+    <state width="1877" height="435" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600035610055" />
+    <state width="1877" height="435" key="GridCell.Tab.0.right" timestamp="1600035610056">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600034473719" />
+    <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600035610056" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598383858166">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

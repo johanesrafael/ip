@@ -173,16 +173,18 @@ public class Duke {
     }
 
     private static void createFile() throws IOException {
-        // hardcoded
+        // find file
         File file = new File(path, "progress.txt");
         if (!file.exists()) {
             try {
+                // make new file
                 file.createNewFile();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
         try {
+            // rewrite file
             BufferedWriter newFile = new BufferedWriter(new FileWriter(file.getAbsoluteFile()));
             for(int i = 0; i < tasks.size(); i++){
                 newFile.write(tasks.get(i).toString());
@@ -195,7 +197,7 @@ public class Duke {
     }
 
     private static void readFile() throws IOException, OtherException {
-        // hardcoded
+        // get path
         Path path2 = Paths.get(path, "progress.txt");
         String file = Files.readString(path2, StandardCharsets.UTF_8);
         Scanner data = new Scanner(file);
