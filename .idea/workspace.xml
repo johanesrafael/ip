@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="944e3822-5dd0-44b9-b14a-06d2eb424e12" name="Default Changelist" comment="Commented an unused variable">
-      <change beforePath="$PROJECT_DIR$/out/production/IP/Task/Duke.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IP/Task/Duke.class" afterDir="false" />
-=======
+
     <list default="true" id="944e3822-5dd0-44b9-b14a-06d2eb424e12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Task/Duke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Duke.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Task/Exception/FolderNotExistException.java" beforeDir="false" />
->>>>>>> branch-Level-7
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +64,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-=======
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -81,7 +75,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
->>>>>>> branch-Level-7
     <recent_temporary>
       <list>
         <item itemvalue="Application.Duke" />
@@ -228,37 +221,6 @@
       <option name="project" value="LOCAL" />
       <updated>1599459788322</updated>
     </task>
-<<<<<<< HEAD
-    <task id="LOCAL-00017" summary="A-Packages.">
-      <created>1599462648343</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1599462648343</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Reformated with ArrayList java collection class">
-      <created>1600016651722</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1600016651722</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Added delete methode and delete message in Task">
-      <created>1600016819594</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1600016819594</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Added comments">
-      <created>1600016915127</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1600016915127</updated>
-    </task>
-    <option name="localTasksCounter" value="21" />
-=======
     <task id="LOCAL-00017" summary="Level-7. Add create and read file method.">
       <created>1600023915745</created>
       <option name="number" value="00017" />
@@ -386,7 +348,6 @@
       <updated>1600038927160</updated>
     </task>
     <option name="localTasksCounter" value="35" />
->>>>>>> branch-Level-7
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,13 +360,6 @@
     <MESSAGE value="A-CodingStandard" />
     <MESSAGE value="Level-4. ToDos, Events, Deadlines" />
     <MESSAGE value="Level-5. Handle Errors" />
-<<<<<<< HEAD
-    <MESSAGE value="A-Packages." />
-    <MESSAGE value="Reformated with ArrayList java collection class" />
-    <MESSAGE value="Added delete methode and delete message in Task" />
-    <MESSAGE value="Added comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added comments" />
-=======
     <MESSAGE value="Level-7. Add create and read file method." />
     <MESSAGE value="Level-7. Created new methods" />
     <MESSAGE value="Level-7. new passes methods for todo, event, deadline from saved files" />
@@ -424,7 +378,6 @@
     <MESSAGE value="Level-7. Added some comments in methods" />
     <MESSAGE value="Level-7. Added isFolderExisted method" />
     <option name="LAST_COMMIT_MESSAGE" value="Level-7. Added isFolderExisted method" />
->>>>>>> branch-Level-7
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="183" width="816" height="729" key="#Intentions" timestamp="1600031249572">
@@ -450,41 +403,16 @@
     <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600038993757">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-<<<<<<< HEAD
-    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1599459036434" />
-    <state x="585" y="93" key="CommitChangelistDialog2" timestamp="1600017095168">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="585" y="93" key="CommitChangelistDialog2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600017095168" />
-=======
     <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038993757" />
     <state x="585" y="93" key="CommitChangelistDialog2" timestamp="1600038926363">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="585" y="93" key="CommitChangelistDialog2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038926363" />
->>>>>>> branch-Level-7
+
     <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1599207260800">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1599207260800" />
-<<<<<<< HEAD
-    <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1600039415301">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600039415301" />
-    <state width="1877" height="435" key="GridCell.Tab.0.center" timestamp="1600039415299">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600039415299" />
-    <state width="1877" height="435" key="GridCell.Tab.0.left" timestamp="1600039415299">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600039415299" />
-    <state width="1877" height="435" key="GridCell.Tab.0.right" timestamp="1600039415300">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600039415300" />
-=======
     <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1600038928596">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -501,7 +429,6 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600038928596" />
->>>>>>> branch-Level-7
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598383858166">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -534,17 +461,12 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598507099373" />
-<<<<<<< HEAD
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1600016916354">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600016916354" />
-=======
+
     <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1600035750707">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600035750707" />
->>>>>>> branch-Level-7
+
     <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599462155197">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

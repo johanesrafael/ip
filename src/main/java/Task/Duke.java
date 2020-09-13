@@ -175,6 +175,8 @@ public class Duke {
             }
             else if(userInput.startsWith("delete")){
                 delete(userInput);
+                // update the file
+                createFile();
             }
             else{
                 // insert into list
