@@ -42,8 +42,6 @@ public class Duke {
             throw new OtherException();
         }
         createFile();
-        // print the newly added task
-        // printAddedTask();
     }
 
     private static void insertEvent(String userInput) {
@@ -150,6 +148,7 @@ public class Duke {
             }
             else if(userInput.startsWith("done")){
                 setDone(userInput);
+                // update the file
                 createFile();
             }
             else{
@@ -159,6 +158,7 @@ public class Duke {
                 } catch (OtherException | IOException e){
                     viewInvalidCommandMessage();
                 }
+                printAddedTask();
             }
             // ask user input
             userInput = echo.nextLine();
@@ -191,7 +191,7 @@ public class Duke {
         Path path = Paths.get("D:\\CEG\\SEMESTER 3\\CS2113\\Individual Project\\Saved Files\\progress.txt");
         String file = Files.readString(path, StandardCharsets.UTF_8);
         Scanner data = new Scanner(file);
-        // make read by line then insert to the corresponding task type
+        // make read by line then insert to the corresponding task
         while(data.hasNextLine()){
             insertExistingFileDataToTasks(data.nextLine());
         }
@@ -205,20 +205,25 @@ public class Duke {
     }
 
     private static void passToToDo(String userData){
+        // take out the description
         String description = userData.split("]")[2];
+        // take the symbol
         String isTaskDone = userData.substring(4,5);
         // create To-Do task for passing over the user input to the actual task array
         ToDo task = new ToDo(description);
         // assign task into actual task and increment listCounter
         tasks.add(task);
+        // check whether the task is done
         isTaskDone(isTaskDone);
     }
 
     private static void passToDeadline(String userData){
+        // erase brackets
         userData = userData.replace("(","");
         userData = userData.replace(")","");
+        // take symbol
         String isTaskDone = userData.substring(4,5);
-        // System.out.println(isTaskDone);
+        // take indexes
         int descriptionStartIndex = userData.indexOf(" ");
         int descriptionEndIndex = userData.indexOf("by:");
         String description = userData.substring(descriptionStartIndex, descriptionEndIndex);
@@ -228,13 +233,17 @@ public class Duke {
         Deadline task = new Deadline(description, by);
         // assign task into actual task and increment listCounter
         tasks.add(task);
+        // check whether the task is done
         isTaskDone(isTaskDone);
     }
 
     private static void passToEvent(String userData){
+        // erase brackets
         userData = userData.replace("(","");
         userData = userData.replace(")","");
+        // take the symbol
         String isTaskDone = userData.substring(4,5);
+        // take indexes
         int descriptionStartIndex = userData.indexOf(" ");
         int descriptionEndIndex = userData.indexOf("at:");
         String description = userData.substring(descriptionStartIndex, descriptionEndIndex);
@@ -244,11 +253,14 @@ public class Duke {
         Event task = new Event(description, at);
         // assign task into actual task and increment listCounter
         tasks.add(task);
+        // check whether the task is done
         isTaskDone(isTaskDone);
     }
 
     private static void insertExistingFileDataToTasks(String userData) throws OtherException {
+        // take task type
         char taskType = userData.charAt(1);
+        // insert the task based on task type
         switch (taskType){
         case 'T':
             passToToDo(userData);
@@ -278,7 +290,7 @@ public class Duke {
         createLogo();
         // greet
         greet();
-        // createFile();
+        // read file first
         readFile();
         handleCommand();
         // create bye message
