@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="IP:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/IP_jar</output-path>
+    <root id="archive" name="IP.jar">
+      <element id="module-output" name="IP" />
+    </root>
+  </artifact>
+</component>
