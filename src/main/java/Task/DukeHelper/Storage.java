@@ -41,7 +41,7 @@ public class Storage {
 
     private static void isTaskDone(String userDataSymbol){
         if(userDataSymbol.equals("\u2713")){
-            Parser.tasks.get(Parser.tasks.size()-1).setDone();
+            TaskList.tasks.get(TaskList.tasks.size()-1).setDone();
         }
     }
 
@@ -53,7 +53,7 @@ public class Storage {
         // create To-Do task for passing over the user input to the actual task array
         ToDo task = new ToDo(description);
         // assign task into actual task and increment listCounter
-        Parser.tasks.add(task);
+        TaskList.tasks.add(task);
         // check whether the task is done
         isTaskDone(isTaskDone);
     }
@@ -73,7 +73,7 @@ public class Storage {
         // create event task to be passed over to the actual task array
         Deadline task = new Deadline(description, by);
         // assign task into actual task and increment listCounter
-        Parser.tasks.add(task);
+        TaskList.tasks.add(task);
         // check whether the task is done
         isTaskDone(isTaskDone);
     }
@@ -93,7 +93,7 @@ public class Storage {
         // create event task to be passed over to the actual task array
         Event task = new Event(description, at);
         // assign task into actual task and increment listCounter
-        Parser.tasks.add(task);
+        TaskList.tasks.add(task);
         // check whether the task is done
         isTaskDone(isTaskDone);
     }
