@@ -1,2 +1,5 @@
-package Task.DukeHelper;public class Command {
+package Task.DukeHelper;
+
+public class Command {
+
 }
