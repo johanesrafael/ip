@@ -51,12 +51,10 @@ public class Storage {
     }
 
     private static void passToToDo(String userData){
-        // take out the description
-        String description = userData.split("]")[2];
+        ToDo task = Parser.parseExistingToDo(userData);
+
         // take the symbol
         String isTaskDone = userData.substring(4,5);
-        // create To-Do task for passing over the user input to the actual task array
-        ToDo task = new ToDo(description);
         // assign task into actual task and increment listCounter
         TaskList.tasks.add(task);
         // check whether the task is done
@@ -64,19 +62,11 @@ public class Storage {
     }
 
     private static void passToDeadline(String userData){
-        // erase brackets
-        userData = userData.replace("(","");
-        userData = userData.replace(")","");
+        userData = Parser.stripBrackets(userData);
+
+        Deadline task = Parser.parseExistingDeadline(userData);
         // take symbol
         String isTaskDone = userData.substring(4,5);
-        // take indexes
-        int descriptionStartIndex = userData.indexOf(" ");
-        int descriptionEndIndex = userData.indexOf("by:");
-        String description = userData.substring(descriptionStartIndex, descriptionEndIndex);
-        // take the event time
-        String by = userData.substring(descriptionEndIndex + 3);
-        // create event task to be passed over to the actual task array
-        Deadline task = new Deadline(description, by);
         // assign task into actual task and increment listCounter
         TaskList.tasks.add(task);
         // check whether the task is done
@@ -85,18 +75,11 @@ public class Storage {
 
     private static void passToEvent(String userData){
         // erase brackets
-        userData = userData.replace("(","");
-        userData = userData.replace(")","");
+        userData = Parser.stripBrackets(userData);
+
+        Event task = Parser.parseExistingEvent(userData);
         // take the symbol
         String isTaskDone = userData.substring(4,5);
-        // take indexes
-        int descriptionStartIndex = userData.indexOf(" ");
-        int descriptionEndIndex = userData.indexOf("at:");
-        String description = userData.substring(descriptionStartIndex, descriptionEndIndex);
-        // take the event time
-        String at = userData.substring(descriptionEndIndex + 3);
-        // create event task to be passed over to the actual task array
-        Event task = new Event(description, at);
         // assign task into actual task and increment listCounter
         TaskList.tasks.add(task);
         // check whether the task is done
