@@ -7,19 +7,19 @@ public class Ui {
                 + "| | | | | | | |/ / _ \\\n"
                 + "| |_| | |_| |   <  __/\n"
                 + "|____/ \\__,_|_|\\_\\___|\n";
-        System.out.println("Hello from\n" + logo);
+        System.out.println("Hello from\n" + logo + System.lineSeparator());
     }
 
     public static void greet() {
         String greet = "Hello! I'm Duke\n"
                 + "What can I do for you?\n";
         // print greet
-        System.out.println(greet);
+        System.out.println(greet + System.lineSeparator());
     }
 
     public static void createByeMessage() {
         String exit = "\nBye. Hope to see you again soon!\n";
-        System.out.println("   " + exit);
+        System.out.println("   " + exit + System.lineSeparator());
     }
 
     static void viewEmptyToDoMessage(){
@@ -34,5 +34,13 @@ public class Ui {
 
     static void viewInvalidCommandMessage() {
         System.out.println("\n ☹ OOPS!!! I'm sorry, but I don't know what that means :-(\n");
+    }
+
+    static void getListHeader() {
+        System.out.println(System.lineSeparator() + "   Here are the tasks in your list:\n");
+    }
+
+    static void lineSeparator(){
+        System.out.println(System.lineSeparator());
     }
 }

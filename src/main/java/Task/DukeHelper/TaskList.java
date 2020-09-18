@@ -63,10 +63,11 @@ public class TaskList {
 
     // view tasks
     public static void getList(){
-        System.out.println("   Here are the tasks in your list:\n");
+        Ui.getListHeader();
         for(int i = 0; i < tasks.size(); i++){
             System.out.println("   " + (i + 1) + ". " + tasks.get(i));
         }
+        Ui.lineSeparator();
     }
 
     static void setDone(String userInput) {
