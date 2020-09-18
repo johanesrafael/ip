@@ -53,19 +53,11 @@ public class TaskList {
 
     }
 
-    static void viewEmptyToDoMessage(){
-        System.out.println("\n ☹ OOPS!!! The description of a todo cannot be empty.\n");
-    }
-
     static void printAddedTask() {
         if (tasks.size() < 2) {
-            System.out.println("   Got it. I've added this task:\n\t"
-                    + tasks.get(0) + "\n   Now you have "
-                    + tasks.size() + " task in the list.\n");
+            Ui.getAddedTask();
         } else {
-            System.out.println("   Got it. I've added this task:\n\t"
-                    + tasks.get(tasks.size()-1) + "\n   Now you have "
-                    + tasks.size() + " tasks in the list.\n");
+            Ui.getAddedTask();
         }
     }
 
@@ -97,7 +89,4 @@ public class TaskList {
         tasks.remove(indexTask-1);
     }
 
-    static void viewInvalidCommandMessage() {
-        System.out.println("\n ☹ OOPS!!! I'm sorry, but I don't know what that means :-(\n");
-    }
 }

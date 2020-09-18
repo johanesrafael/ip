@@ -4,7 +4,7 @@ import Task.Exception.OtherException;
 import Task.Exception.ToDoException;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.Scanner;
 
 public class Parser {
 
@@ -17,7 +17,7 @@ public class Parser {
             try {
                 TaskList.insertToDo(userInput);
             } catch (ToDoException e) {
-                TaskList.viewEmptyToDoMessage();
+                Ui.viewEmptyToDoMessage();
             }
             break;
         case "deadline":
@@ -59,7 +59,7 @@ public class Parser {
                 try {
                     insertToList(userInput);
                 } catch (OtherException | IOException e){
-                    TaskList.viewInvalidCommandMessage();
+                    Ui.viewInvalidCommandMessage();
                 }
                 // print newly added task
                 TaskList.printAddedTask();
