@@ -5,9 +5,14 @@ import Task.TaskType.Deadline;
 import Task.TaskType.Event;
 import Task.TaskType.ToDo;
 
-import java.io.*;
-import java.nio.charset.*;
-import java.nio.file.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 
 public class Storage {
@@ -35,7 +40,7 @@ public class Storage {
             File dir = new File(Constants.folder);
             dir.mkdir();
             // create the file
-            Parser.createFile();
+            createFile();
         }
     }
 
@@ -114,6 +119,30 @@ public class Storage {
             break;
         default:
             throw new OtherException();
+        }
+    }
+
+    public static void createFile() throws IOException {
+        // find file
+        File file = new File(Constants.path, Constants.fileName);
+        if (!file.exists()) {
+            try {
+                // make new file
+                file.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        try {
+            // rewrite file
+            BufferedWriter newFile = new BufferedWriter(new FileWriter(file.getAbsoluteFile()));
+            for(int i = 0; i < TaskList.tasks.size(); i++){
+                newFile.write(TaskList.tasks.get(i).toString());
+                newFile.newLine();
+            }
+            newFile.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

@@ -3,9 +3,6 @@ package Task.DukeHelper;
 import Task.Exception.OtherException;
 import Task.Exception.ToDoException;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
@@ -33,31 +30,7 @@ public class Parser {
             throw new OtherException();
         }
         // update file
-        createFile();
-    }
-
-    public static void createFile() throws IOException {
-        // find file
-        File file = new File(Constants.path, Constants.fileName);
-        if (!file.exists()) {
-            try {
-                // make new file
-                file.createNewFile();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        try {
-            // rewrite file
-            BufferedWriter newFile = new BufferedWriter(new FileWriter(file.getAbsoluteFile()));
-            for(int i = 0; i < TaskList.tasks.size(); i++){
-                newFile.write(TaskList.tasks.get(i).toString());
-                newFile.newLine();
-            }
-            newFile.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        Storage.createFile();
     }
 
     public static void handleCommand() throws IOException {
@@ -74,12 +47,12 @@ public class Parser {
             else if(userInput.startsWith("done")){
                 TaskList.setDone(userInput);
                 // update the file
-                createFile();
+                Storage.createFile();
             }
             else if(userInput.startsWith("delete")){
                 TaskList.delete(userInput);
                 // update the file
-                createFile();
+                Storage.createFile();
             }
             else{
                 // insert into list
