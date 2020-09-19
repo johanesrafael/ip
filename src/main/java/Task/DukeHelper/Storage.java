@@ -36,7 +36,7 @@ public class Storage {
 
     private static void isFolderExisted(File file) throws IOException {
         if (!file.exists() && !file.isDirectory()) {
-            System.out.println("No such file or directory. Creating new directory and new file.");
+            Ui.noFileOrDirectoryMessage();
             // make new directory
             File dir = new File(Constants.folder);
             dir.mkdir();

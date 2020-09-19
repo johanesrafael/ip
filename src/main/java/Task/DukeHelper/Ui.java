@@ -43,4 +43,8 @@ public class Ui {
     static void lineSeparator(){
         System.out.println(System.lineSeparator());
     }
+
+    static void noFileOrDirectoryMessage() {
+        System.out.println("No such file or directory. Creating new directory and new file.");
+    }
 }
