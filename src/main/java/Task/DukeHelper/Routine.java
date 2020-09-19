@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Routine {
     public static void routine() throws IOException, OtherException {
-        getHelloMessage(Constants.command.GREET);
+        getHelloMessage();
         // read file first
         Storage.readFile();
         Parser.handleCommand();
@@ -14,7 +14,7 @@ public class Routine {
         Ui.createByeMessage();
     }
 
-    private static void getHelloMessage(Constants.command greet) {
+    private static void getHelloMessage() {
         // create logo
         Ui.createLogo();
         // greet
