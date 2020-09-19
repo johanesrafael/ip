@@ -36,6 +36,7 @@ public class Storage {
 
     private static void isFolderExisted(File file) throws IOException {
         if (!file.exists() && !file.isDirectory()) {
+            System.out.println("No such file or directory. Creating new directory and new file.");
             // make new directory
             File dir = new File(Constants.folder);
             dir.mkdir();
@@ -45,7 +46,7 @@ public class Storage {
     }
 
     private static void isTaskDone(String userDataSymbol){
-        if(userDataSymbol.equals("\u2713")){
+        if(userDataSymbol.equals("0")){
             TaskList.tasks.get(TaskList.tasks.size()-1).setDone();
         }
     }
