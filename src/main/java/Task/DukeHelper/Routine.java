@@ -6,14 +6,18 @@ import java.io.IOException;
 
 public class Routine {
     public static void routine() throws IOException, OtherException {
-        // create logo
-        Ui.createLogo();
-        // greet
-        Ui.greet();
+        getHelloMessage(Constants.command.GREET);
         // read file first
         Storage.readFile();
         Parser.handleCommand();
         // create bye message
         Ui.createByeMessage();
+    }
+
+    private static void getHelloMessage(Constants.command greet) {
+        // create logo
+        Ui.createLogo();
+        // greet
+        Ui.greet();
     }
 }
