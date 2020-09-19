@@ -10,17 +10,4 @@ public class Constants {
     // create file name variable
     public static  String fileName = "progress.txt";
 
-    public enum command{
-        GREET,
-        BYE,
-        PROMPT_INPUT,
-        ADD_TO_DEADLINE,
-        ADD_TO_TODO,
-        ADD_TO_EVENT,
-        SHOW_LIST,
-        SHOW_MARKED_AS_DONE,
-        DELETE_TASK,
-        SAVE_FILE,
-        LOAD_FILE,
-    }
 }
