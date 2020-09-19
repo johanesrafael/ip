@@ -61,11 +61,11 @@ public class Parser {
                 // insert into list
                 try {
                     insertToList(userInput);
+                    // print newly added task
+                    TaskList.printAddedTask();
                 } catch (OtherException | IOException e){
                     Ui.viewInvalidCommandMessage();
                 }
-                // print newly added task
-                TaskList.printAddedTask();
             }
             // ask user input
             userInput = echo.nextLine();
