@@ -12,6 +12,6 @@ public class DateAndTime {
     }
     public static String convertTime(String time){
         LocalTime convertedTime = LocalTime.parse(time);
-        return convertedTime.format(DateTimeFormatter.ISO_LOCAL_TIME);
+        return convertedTime.format(DateTimeFormatter.ofPattern("h:mm a"));
     }
 }
