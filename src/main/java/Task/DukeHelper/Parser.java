@@ -144,16 +144,27 @@ public class Parser {
         return new Event(description, at);
     }
 
-    static String parseDate(String date){
+    static String parseDate(String dateAndTime) {
         String[] dateComponent;
+        String date;
+        String time;
         String newDate;
-        if(date.contains("/")){
-            dateComponent = date.split("/");
-            newDate = dateComponent[2] + "-" + dateComponent[1] + "-" + dateComponent[0];
-            return DateAndTime.convertDate(newDate);
+
+        if (dateAndTime.contains(" ") && countSubstring(dateAndTime) == 2) {
+            date = dateAndTime.split(" ")[0];
+            time = dateAndTime.split(" ")[1];
+            if (date.contains("/")) {
+                dateComponent = date.split("/");
+                newDate = dateComponent[2] + "-" + dateComponent[1] + "-" + dateComponent[0];
+                if (time.contains(":")) {
+                    return DateAndTime.convertDate(newDate) + ", " + DateAndTime.convertTime(time);
+                }
+                return DateAndTime.convertDate(newDate);
+            }
         }
-        else{
-            return date;
+        return dateAndTime;
+    }
+
     public static int countSubstring(String dateAndTime){
         String[] substring = dateAndTime.split(" ");
         int count = 0;
@@ -163,3 +174,4 @@ public class Parser {
         return count;
     }
 }
+
