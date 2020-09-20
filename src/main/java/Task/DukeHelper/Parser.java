@@ -154,6 +154,12 @@ public class Parser {
         }
         else{
             return date;
+    public static int countSubstring(String dateAndTime){
+        String[] substring = dateAndTime.split(" ");
+        int count = 0;
+        for(int i=0; i < substring.length; i++){
+            count++;
         }
+        return count;
     }
 }
