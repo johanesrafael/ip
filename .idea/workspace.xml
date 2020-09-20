@@ -7,9 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="944e3822-5dd0-44b9-b14a-06d2eb424e12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_7_2020_3_01_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_7_2020_3_01_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/TaskList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Ui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Ui.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +68,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="Task.DukeHelper.TaskList" />
       <recent name="Task.DukeHelper.Ui" />
       <recent name="Task.DukeHelper.Parser" />
       <recent name="Task.DukeHelper.Routine" />
       <recent name="Task.DukeHelper.Storage" />
-      <recent name="Task.DukeHelper.TaskList" />
     </key>
   </component>
   <component name="RunManager">
@@ -82,13 +83,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -429,18 +432,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="722" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598738377420" />
-    <state x="689" y="327" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600474876115">
+    <state x="689" y="327" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600585017714">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="689" y="327" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600474876115" />
+    <state x="689" y="327" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600585017714" />
     <state x="640" y="261" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1598369548204">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="640" y="261" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598369548204" />
-    <state x="671" y="236" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1600474877712">
+    <state x="671" y="236" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1600585018929">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="671" y="236" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600474877712" />
+    <state x="671" y="236" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600585018929" />
     <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600466896008">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -453,22 +456,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600416041543" />
-    <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1600476980380">
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1600586093428">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600476980380" />
-    <state width="1877" height="435" key="GridCell.Tab.0.center" timestamp="1600476980380">
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600586093428" />
+    <state width="1877" height="435" key="GridCell.Tab.0.center" timestamp="1600586093428">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600476980380" />
-    <state width="1877" height="435" key="GridCell.Tab.0.left" timestamp="1600476980380">
+    <state width="1877" height="435" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600586093428" />
+    <state width="1877" height="435" key="GridCell.Tab.0.left" timestamp="1600586093428">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600476980380" />
-    <state width="1877" height="435" key="GridCell.Tab.0.right" timestamp="1600476980380">
+    <state width="1877" height="435" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600586093428" />
+    <state width="1877" height="435" key="GridCell.Tab.0.right" timestamp="1600586093428">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600476980380" />
+    <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600586093428" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598383858166">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
