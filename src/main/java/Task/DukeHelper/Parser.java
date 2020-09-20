@@ -2,12 +2,12 @@ package Task.DukeHelper;
 
 import Task.Exception.OtherException;
 import Task.Exception.ToDoException;
-import Task.TaskType.Deadline;
-import Task.TaskType.Event;
-import Task.TaskType.ToDo;
+import Task.TaskType.*;
 
 import java.io.IOException;
-import java.util.Scanner;
+import java.util.*;
+
+import static java.util.stream.Collectors.toList;
 
 public class Parser {
 
@@ -57,7 +57,9 @@ public class Parser {
                 // update the file
                 Storage.createFile();
             }
-            else{
+            else if(userInput.startsWith("find")) {
+                find(userInput);
+            }else{
                 // insert into list
                 try {
                     insertToList(userInput);
@@ -140,5 +142,9 @@ public class Parser {
         String at = userData.substring(descriptionEndIndex + 3);
         // create event task to be passed over to the actual task array
         return new Event(description, at);
+    }
+    public static void find(String userInput){
+        userInput = userInput.split(" ")[1];
+        TaskList.filteredList(userInput);
     }
 }
