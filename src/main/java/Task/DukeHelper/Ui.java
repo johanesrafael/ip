@@ -20,6 +20,7 @@ public class Ui {
     }
 
     public static void createByeMessage() {
+        showLine();
         String exit = "\nBye. Hope to see you again soon!\n";
         System.out.println("   " + exit);
         lineSeparator();
@@ -63,5 +64,10 @@ public class Ui {
         showLine();
         System.out.println("No such file or directory. Creating new directory and new file.");
         lineSeparator();
+    }
+
+    static void showFilteredListHeader(){
+        showLine();
+        System.out.println("    Here are the matching tasks in your list:\n");
     }
 }

@@ -9,6 +9,7 @@ import Task.TaskType.ToDo;
 import java.io.IOException;
 import java.util.Scanner;
 
+
 public class Parser {
 
     // insert user input to the list
@@ -57,7 +58,9 @@ public class Parser {
                 // update the file
                 Storage.createFile();
             }
-            else{
+            else if(userInput.startsWith("find")) {
+                find(userInput);
+            }else{
                 // insert into list
                 try {
                     insertToList(userInput);
@@ -142,6 +145,11 @@ public class Parser {
         String at = userData.substring(descriptionEndIndex + 3);
         // create event task to be passed over to the actual task array
         return new Event(description, at);
+    }
+
+    public static void find(String userInput) {
+        userInput = userInput.split(" ")[1];
+        TaskList.filteredList(userInput);
     }
 
     static String parseDate(String dateAndTime) {
