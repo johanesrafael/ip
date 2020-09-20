@@ -78,9 +78,10 @@ public class Parser {
         int descriptionEndIndex = userInput.indexOf("/at");
         String description = userInput.substring(descriptionStartIndex, descriptionEndIndex);
         // take the event time
-        String at = userInput.substring(descriptionEndIndex + 3);
+        String at = userInput.substring(descriptionEndIndex + 4);
+        String convertedAt = parseDate(at);
         // create event task to be passed over to the actual task array
-        return new Event(description, at);
+        return new Event(description, convertedAt);
     }
 
     static Deadline parseDeadline(String userInput) {
@@ -89,9 +90,10 @@ public class Parser {
         int descriptionEndIndex = userInput.indexOf("/by");
         String description = userInput.substring(descriptionStartIndex, descriptionEndIndex);
         // take the deadline
-        String by = userInput.substring(descriptionEndIndex + 3);
+        String by = userInput.substring(descriptionEndIndex + 4);
+        String convertedBy = parseDate(by);
         // create deadline task to be passed over to the actual task array
-        return new Deadline(description, by);
+        return new Deadline(description, convertedBy);
     }
 
     static ToDo parseToDo(String userInput) throws ToDoException {
@@ -142,5 +144,16 @@ public class Parser {
         return new Event(description, at);
     }
 
-
+    static String parseDate(String date){
+        String[] dateComponent;
+        String newDate;
+        if(date.contains("/")){
+            dateComponent = date.split("/");
+            newDate = dateComponent[2] + "-" + dateComponent[1] + "-" + dateComponent[0];
+            return DateAndTime.convertDate(newDate);
+        }
+        else{
+            return date;
+        }
+    }
 }
