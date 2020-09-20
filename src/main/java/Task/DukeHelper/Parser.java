@@ -81,9 +81,10 @@ public class Parser {
         int descriptionEndIndex = userInput.indexOf("/at");
         String description = userInput.substring(descriptionStartIndex, descriptionEndIndex);
         // take the event time
-        String at = userInput.substring(descriptionEndIndex + 3);
+        String at = userInput.substring(descriptionEndIndex + 4);
+        String convertedAt = parseDate(at);
         // create event task to be passed over to the actual task array
-        return new Event(description, at);
+        return new Event(description, convertedAt);
     }
 
     static Deadline parseDeadline(String userInput) {
@@ -92,9 +93,10 @@ public class Parser {
         int descriptionEndIndex = userInput.indexOf("/by");
         String description = userInput.substring(descriptionStartIndex, descriptionEndIndex);
         // take the deadline
-        String by = userInput.substring(descriptionEndIndex + 3);
+        String by = userInput.substring(descriptionEndIndex + 4);
+        String convertedBy = parseDate(by);
         // create deadline task to be passed over to the actual task array
-        return new Deadline(description, by);
+        return new Deadline(description, convertedBy);
     }
 
     static ToDo parseToDo(String userInput) throws ToDoException {
@@ -144,8 +146,40 @@ public class Parser {
         // create event task to be passed over to the actual task array
         return new Event(description, at);
     }
-    public static void find(String userInput){
+
+    public static void find(String userInput) {
         userInput = userInput.split(" ")[1];
         TaskList.filteredList(userInput);
     }
+
+    static String parseDate(String dateAndTime) {
+        String[] dateComponent;
+        String date;
+        String time;
+        String newDate;
+
+        if (dateAndTime.contains(" ") && countSubstring(dateAndTime) == 2) {
+            date = dateAndTime.split(" ")[0];
+            time = dateAndTime.split(" ")[1];
+            if (date.contains("/")) {
+                dateComponent = date.split("/");
+                newDate = dateComponent[2] + "-" + dateComponent[1] + "-" + dateComponent[0];
+                if (time.contains(":")) {
+                    return DateAndTime.convertDate(newDate) + ", " + DateAndTime.convertTime(time);
+                }
+                return DateAndTime.convertDate(newDate);
+            }
+        }
+        return dateAndTime;
+    }
+
+    public static int countSubstring(String dateAndTime){
+        String[] substring = dateAndTime.split(" ");
+        int count = 0;
+        for(int i=0; i < substring.length; i++){
+            count++;
+        }
+        return count;
+    }
 }
+
