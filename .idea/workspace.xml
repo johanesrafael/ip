@@ -7,8 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="944e3822-5dd0-44b9-b14a-06d2eb424e12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_7_2020_3_01_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_7_2020_3_01_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,17 +80,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Duke" />
@@ -128,7 +115,9 @@
       <workItem from="1600014383503" duration="2716000" />
       <workItem from="1600324998700" duration="596000" />
       <workItem from="1600416008919" duration="40000" />
-      <workItem from="1600462448243" duration="13888000" />
+      <workItem from="1600462448243" duration="15751000" />
+      <workItem from="1600522564317" duration="3446000" />
+      <workItem from="1600578613201" duration="5819000" />
     </task>
     <task id="LOCAL-00001" summary="Level 3">
       <created>1598227365775</created>
@@ -382,7 +371,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600042113211</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="A-MoreOOP.">
+      <created>1600479735302</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1600479735302</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Level-8. Add convertDate and convertTime methods">
+      <created>1600529007342</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1600529007342</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +393,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Level 3" />
     <MESSAGE value="Level 3: Mark As Done" />
     <MESSAGE value="A-CodingStandard" />
     <MESSAGE value="Level-4. ToDos, Events, Deadlines" />
@@ -414,7 +416,9 @@
     <MESSAGE value="Level-7. Added isFolderExisted method" />
     <MESSAGE value="Level-7. Merged All increments" />
     <MESSAGE value="A-Jar. Created A JAR file" />
-    <option name="LAST_COMMIT_MESSAGE" value="A-Jar. Created A JAR file" />
+    <MESSAGE value="A-MoreOOP." />
+    <MESSAGE value="Level-8. Add convertDate and convertTime methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Level-8. Add convertDate and convertTime methods" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="183" width="816" height="729" key="#Intentions" timestamp="1600031249572">
@@ -445,30 +449,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600466896008" />
-    <state x="585" y="93" key="CommitChangelistDialog2" timestamp="1600042112395">
+    <state x="585" y="93" key="CommitChangelistDialog2" timestamp="1600529006492">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="93" key="CommitChangelistDialog2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600042112395" />
+    <state x="585" y="93" key="CommitChangelistDialog2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600529006492" />
     <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1600416041543">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600416041543" />
-    <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1600476980380">
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1600584462888">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600476980380" />
-    <state width="1877" height="435" key="GridCell.Tab.0.center" timestamp="1600476980380">
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600584462888" />
+    <state width="1877" height="435" key="GridCell.Tab.0.center" timestamp="1600584462888">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600476980380" />
-    <state width="1877" height="435" key="GridCell.Tab.0.left" timestamp="1600476980380">
+    <state width="1877" height="435" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600584462888" />
+    <state width="1877" height="435" key="GridCell.Tab.0.left" timestamp="1600584462888">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600476980380" />
-    <state width="1877" height="435" key="GridCell.Tab.0.right" timestamp="1600476980380">
+    <state width="1877" height="435" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600584462888" />
+    <state width="1877" height="435" key="GridCell.Tab.0.right" timestamp="1600584462888">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600476980380" />
+    <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600584462888" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598383858166">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -497,14 +501,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="775" y="459" key="ReplaceDuplicatesPrompt/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600473193360" />
+    <state x="749" y="245" key="RollbackChangesDialog" timestamp="1600584274052">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="749" y="245" key="RollbackChangesDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600584274052" />
     <state x="461" y="170" key="SettingsEditor" timestamp="1600040658458">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600040658458" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1600467704283">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1600479741708">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600467704283" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600479741708" />
     <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599462155197">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
