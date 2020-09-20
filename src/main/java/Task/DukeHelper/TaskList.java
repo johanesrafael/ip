@@ -78,8 +78,9 @@ public class TaskList {
 
     public static void filteredList(String userInput){
         Ui.showFilteredListHeader();
-        for(Task t: filterByString(tasks, userInput)){
-            System.out.println("    " +  t);
+        ArrayList<Task> filteredTasks = filterByString(tasks, userInput);
+        for(int i=0; i < filteredTasks.size(); i++){
+            System.out.println("    " +  (i+1) + ". " + filteredTasks.get(i));
         }
         Ui.lineSeparator();
     }
