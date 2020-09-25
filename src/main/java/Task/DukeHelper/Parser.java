@@ -75,7 +75,7 @@ public class Parser {
         }
     }
 
-    static Event parseEvent(String userInput) {
+    public static Event parseEvent(String userInput) {
         // take the description by finding the start and end index
         int descriptionStartIndex = userInput.indexOf(" ");
         int descriptionEndIndex = userInput.indexOf("/at");
@@ -87,7 +87,7 @@ public class Parser {
         return new Event(description, convertedAt);
     }
 
-    static Deadline parseDeadline(String userInput) {
+    public static Deadline parseDeadline(String userInput) {
         // take the description by finding the start and end index
         int descriptionStartIndex = userInput.indexOf(" ");
         int descriptionEndIndex = userInput.indexOf("/by");
@@ -99,7 +99,7 @@ public class Parser {
         return new Deadline(description, convertedBy);
     }
 
-    static ToDo parseToDo(String userInput) throws ToDoException {
+    public static ToDo parseToDo(String userInput) throws ToDoException {
         // take the description by finding the start index
         int descriptionStartIndex = userInput.indexOf(" ");
         String description = userInput.substring(descriptionStartIndex);
@@ -110,7 +110,7 @@ public class Parser {
         return new ToDo(description);
     }
 
-    static ToDo parseExistingToDo(String userData) {
+    public static ToDo parseExistingToDo(String userData) {
         // take out the description
         String description = userData.split("]")[2];
 
@@ -118,7 +118,7 @@ public class Parser {
         return new ToDo(description);
     }
 
-    static Deadline parseExistingDeadline(String userData) {
+    public static Deadline parseExistingDeadline(String userData) {
         // take indexes
         int descriptionStartIndex = userData.indexOf(" ");
         int descriptionEndIndex = userData.indexOf("by:");
@@ -129,14 +129,14 @@ public class Parser {
         return new Deadline(description, by);
     }
 
-    static String stripBrackets(String userData) {
+    public static String stripBrackets(String userData) {
         // erase brackets
         userData = userData.replace("(", "");
         userData = userData.replace(")", "");
         return userData;
     }
 
-    static Event parseExistingEvent(String userData) {
+    public static Event parseExistingEvent(String userData) {
         // take indexes
         int descriptionStartIndex = userData.indexOf(" ");
         int descriptionEndIndex = userData.indexOf("at:");
@@ -152,7 +152,7 @@ public class Parser {
         TaskList.filteredList(userInput);
     }
 
-    static String parseDate(String dateAndTime) {
+    public static String parseDate(String dateAndTime) {
         String[] dateComponent;
         String date;
         String time;
