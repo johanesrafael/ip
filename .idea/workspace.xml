@@ -8,9 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="944e3822-5dd0-44b9-b14a-06d2eb424e12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/Duke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Duke.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Routine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Routine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/TaskList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +133,7 @@
       <workItem from="1600757908053" duration="3810000" />
       <workItem from="1600911870998" duration="4028000" />
       <workItem from="1600927591157" duration="1850000" />
-      <workItem from="1600993481017" duration="5371000" />
+      <workItem from="1600993481017" duration="6326000" />
     </task>
     <task id="LOCAL-00001" summary="Level 3">
       <created>1598227365775</created>

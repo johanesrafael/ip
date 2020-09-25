@@ -52,7 +52,9 @@ public class TaskList {
         Ui.getAddedTask();
     }
 
-    // view tasks
+    /**
+     * shows the task list
+     */
     public static void getList(){
         Ui.getListHeader();
         for(int i = 0; i < tasks.size(); i++){
