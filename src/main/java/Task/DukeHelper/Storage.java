@@ -16,6 +16,11 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class Storage {
+    /**
+     * reads the file from designated path
+     * @throws IOException
+     * @throws OtherException
+     */
     public static void readFile() throws IOException, OtherException {
         // get path
         Path path2 = Paths.get(Constants.path, Constants.fileName);
@@ -34,6 +39,11 @@ public class Storage {
         data.close();
     }
 
+    /**
+     * checks if the file is existed or not. if not, creates new file
+     * @param file
+     * @throws IOException
+     */
     private static void isFolderExisted(File file) throws IOException {
         if (!file.exists() && !file.isDirectory()) {
             Ui.noFileOrDirectoryMessage();
@@ -106,6 +116,10 @@ public class Storage {
         }
     }
 
+    /**
+     *
+     * @throws IOException
+     */
     public static void createFile() throws IOException {
         // find file
         File file = new File(Constants.path, Constants.fileName);

@@ -8,13 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="944e3822-5dd0-44b9-b14a-06d2eb424e12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/IP_jar/IP.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IP_jar/IP.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IP/Task/DukeHelper/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IP/Task/DukeHelper/TaskList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Routine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Routine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/TaskList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Storage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Ui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Ui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/TaskType/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/TaskType/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +67,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
-      <recent name="Task.DukeHelper.TaskList" />
       <recent name="Task.DukeHelper.Ui" />
+      <recent name="Task.DukeHelper.TaskList" />
       <recent name="Task.DukeHelper.Parser" />
       <recent name="Task.DukeHelper.Routine" />
       <recent name="Task.DukeHelper.Storage" />
@@ -139,7 +134,7 @@
       <workItem from="1600757908053" duration="3810000" />
       <workItem from="1600911870998" duration="4028000" />
       <workItem from="1600927591157" duration="1850000" />
-      <workItem from="1600993481017" duration="930000" />
+      <workItem from="1600993481017" duration="2023000" />
     </task>
     <task id="LOCAL-00001" summary="Level 3">
       <created>1598227365775</created>
@@ -455,18 +450,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="722" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598738377420" />
-    <state x="689" y="327" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600585017714">
+    <state x="689" y="327" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600999555936">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="689" y="327" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600585017714" />
+    <state x="689" y="327" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600999555936" />
     <state x="640" y="261" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1598369548204">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="640" y="261" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598369548204" />
-    <state x="671" y="236" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1600585018929">
+    <state x="671" y="236" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1600999557382">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="671" y="236" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600585018929" />
+    <state x="671" y="236" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600999557382" />
     <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600466896008">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
