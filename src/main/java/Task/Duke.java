@@ -1,5 +1,5 @@
 /**
- * Duke class that acts as main to run the program
+ * Duke class that acts as main to execute the program
  */
 package Task;
 

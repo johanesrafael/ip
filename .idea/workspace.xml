@@ -9,20 +9,9 @@
     <list default="true" id="944e3822-5dd0-44b9-b14a-06d2eb424e12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Task/Duke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Duke.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/DateAndTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/DateAndTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Routine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Routine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Storage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/TaskList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Ui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/Ui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/Exception/DukeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Exception/DukeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/Exception/OtherException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Exception/OtherException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/Exception/ToDoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/Exception/ToDoException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/TaskType/Deadline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/TaskType/Deadline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/TaskType/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/TaskType/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/TaskType/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/TaskType/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task/TaskType/ToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/TaskType/ToDo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +136,7 @@
       <workItem from="1600757908053" duration="3810000" />
       <workItem from="1600911870998" duration="4028000" />
       <workItem from="1600927591157" duration="1850000" />
-      <workItem from="1600993481017" duration="3580000" />
+      <workItem from="1600993481017" duration="5371000" />
     </task>
     <task id="LOCAL-00001" summary="Level 3">
       <created>1598227365775</created>
