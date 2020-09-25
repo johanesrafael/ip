@@ -114,7 +114,7 @@ public class Storage {
                 // make new file
                 file.createNewFile();
             } catch (IOException e) {
-                e.printStackTrace();
+                Ui.getCannotCreateFileMessage();
             }
         }
         try {
@@ -126,7 +126,7 @@ public class Storage {
             }
             newFile.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            Ui.getCannotRewriteMessage();
         }
     }
 }

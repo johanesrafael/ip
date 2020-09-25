@@ -77,4 +77,16 @@ public class Ui {
         // greet
         greet();
     }
+
+    public static void getCannotRewriteMessage(){
+        showLine();
+        System.out.println("    Cannot rewrite such file.");
+        showLine();
+    }
+
+    public static void getCannotCreateFileMessage(){
+        showLine();
+        System.out.println("    Cannot create file.");
+        showLine();
+    }
 }
