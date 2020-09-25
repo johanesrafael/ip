@@ -117,7 +117,7 @@ public class Storage {
     }
 
     /**
-     *
+     *  creates file if the file does not exist and rewrite file whenever it updates
      * @throws IOException
      */
     public static void createFile() throws IOException {

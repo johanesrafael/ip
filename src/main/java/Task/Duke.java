@@ -1,3 +1,6 @@
+/**
+ * Duke class that acts as main to run the program
+ */
 package Task;
 
 import Task.DukeHelper.Routine;

@@ -1,3 +1,6 @@
+/**
+ * sub-Class of Task class that takes in a deadline task
+ */
 package Task.TaskType;
 
 public class Deadline extends Task {

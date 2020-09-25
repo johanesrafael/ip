@@ -1,3 +1,6 @@
+/**
+ * parser class that handles user input and makes sense of the input
+ */
 package Task.DukeHelper;
 
 import Task.Exception.OtherException;
@@ -11,7 +14,6 @@ import java.util.Scanner;
 
 
 public class Parser {
-
     // insert user input to the list
     public static void insertToList(String userInput) throws OtherException, IOException {
         String userInputFirstWord = userInput.split(" ")[0];

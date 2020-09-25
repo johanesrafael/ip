@@ -1,3 +1,6 @@
+/**
+ * TaskList class that provides methods to access list of task
+ */
 package Task.DukeHelper;
 
 import Task.Exception.ToDoException;
@@ -33,11 +36,7 @@ public class TaskList {
     }
 
     public static void printAddedTask() {
-        if (tasks.size() < 2) {
-            Ui.getAddedTask();
-        } else {
-            Ui.getAddedTask();
-        }
+        Ui.getAddedTask();
     }
 
     // view tasks

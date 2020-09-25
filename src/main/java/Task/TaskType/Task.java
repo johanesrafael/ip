@@ -1,3 +1,7 @@
+/**
+ * Task Class that encapsulates its features and commands
+ * Acts as the super-class of ToDo, Event, and Deadline classes
+ */
 package Task.TaskType;
 
 public class Task {

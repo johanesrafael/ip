@@ -1,3 +1,6 @@
+/**
+ * Routine class that runs the whole program
+ */
 package Task.DukeHelper;
 
 import Task.Exception.OtherException;

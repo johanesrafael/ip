@@ -1,3 +1,6 @@
+/**
+ * Ui class that provides interaction for user
+ */
 package Task.DukeHelper;
 
 public class Ui {
