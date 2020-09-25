@@ -1,3 +1,7 @@
+/**
+ * Task Class that encapsulates its features and commands
+ * Acts as the super-class of ToDo, Event, and Deadline classes
+ */
 package Task.TaskType;
 
 public class Task {
@@ -10,7 +14,7 @@ public class Task {
     }
 
     public String getStatusIcon() {
-        return (isDone ? "O" : "X"); //return tick or X symbols
+        return (isDone ? "O" : "X"); //return O or X symbols
     }
 
     public void markAsDone(){

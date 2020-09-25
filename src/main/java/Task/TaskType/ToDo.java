@@ -1,3 +1,6 @@
+/**
+ * sub-Class of Task class that takes in a to-do task
+ */
 package Task.TaskType;
 
 public class ToDo extends Task {

@@ -8,6 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="944e3822-5dd0-44b9-b14a-06d2eb424e12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task/DukeHelper/TaskList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TaskStream" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -65,8 +66,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
-      <recent name="Task.DukeHelper.TaskList" />
       <recent name="Task.DukeHelper.Ui" />
+      <recent name="Task.DukeHelper.TaskList" />
       <recent name="Task.DukeHelper.Parser" />
       <recent name="Task.DukeHelper.Routine" />
       <recent name="Task.DukeHelper.Storage" />
@@ -80,15 +81,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,6 +130,10 @@
       <workItem from="1600462448243" duration="15751000" />
       <workItem from="1600522564317" duration="3446000" />
       <workItem from="1600578613201" duration="5819000" />
+      <workItem from="1600757908053" duration="3810000" />
+      <workItem from="1600911870998" duration="4028000" />
+      <workItem from="1600927591157" duration="1850000" />
+      <workItem from="1600993481017" duration="6326000" />
     </task>
     <task id="LOCAL-00001" summary="Level 3">
       <created>1598227365775</created>
@@ -446,18 +449,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="722" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598738377420" />
-    <state x="689" y="327" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600585017714">
+    <state x="689" y="327" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600999555936">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="689" y="327" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600585017714" />
+    <state x="689" y="327" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600999555936" />
     <state x="640" y="261" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1598369548204">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="640" y="261" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1598369548204" />
-    <state x="671" y="236" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1600585018929">
+    <state x="671" y="236" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1600999557382">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="671" y="236" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600585018929" />
+    <state x="671" y="236" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600999557382" />
     <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600466896008">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -466,26 +469,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="585" y="93" key="CommitChangelistDialog2/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600529006492" />
-    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1600416041543">
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1600846590196">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600416041543" />
-    <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1600584462888">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600846590196" />
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1600922237784">
+      <screen x="1920" y="3" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600584462888" />
-    <state width="1877" height="435" key="GridCell.Tab.0.center" timestamp="1600584462888">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600589704550" />
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.3.1920.1050@1920.3.1920.1050" timestamp="1600922237784" />
+    <state width="1877" height="435" key="GridCell.Tab.0.center" timestamp="1600922237784">
+      <screen x="1920" y="3" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600584462888" />
-    <state width="1877" height="435" key="GridCell.Tab.0.left" timestamp="1600584462888">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1877" height="435" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600589704550" />
+    <state width="1877" height="435" key="GridCell.Tab.0.center/0.0.1920.1050/1920.3.1920.1050@1920.3.1920.1050" timestamp="1600922237784" />
+    <state width="1877" height="435" key="GridCell.Tab.0.left" timestamp="1600922237784">
+      <screen x="1920" y="3" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600584462888" />
-    <state width="1877" height="435" key="GridCell.Tab.0.right" timestamp="1600584462888">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1877" height="435" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600589704550" />
+    <state width="1877" height="435" key="GridCell.Tab.0.left/0.0.1920.1050/1920.3.1920.1050@1920.3.1920.1050" timestamp="1600922237784" />
+    <state width="1877" height="435" key="GridCell.Tab.0.right" timestamp="1600922237784">
+      <screen x="1920" y="3" width="1920" height="1050" />
     </state>
-    <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600584462888" />
+    <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@0.0.1920.1050" timestamp="1600589704550" />
+    <state width="1877" height="435" key="GridCell.Tab.0.right/0.0.1920.1050/1920.3.1920.1050@1920.3.1920.1050" timestamp="1600922237784" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598383858166">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

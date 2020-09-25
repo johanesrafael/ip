@@ -1,3 +1,6 @@
+/**
+ * parser class that handles user input and makes sense of the input
+ */
 package Task.DukeHelper;
 
 import Task.Exception.OtherException;
@@ -11,8 +14,12 @@ import java.util.Scanner;
 
 
 public class Parser {
-
-    // insert user input to the list
+    /**
+     * inserts to list by determining the type of task
+     * @param userInput
+     * @throws OtherException
+     * @throws IOException
+     */
     public static void insertToList(String userInput) throws OtherException, IOException {
         String userInputFirstWord = userInput.split(" ")[0];
 
@@ -37,6 +44,10 @@ public class Parser {
         Storage.createFile();
     }
 
+    /**
+     * handles command and executes it
+     * @throws IOException
+     */
     public static void handleCommand() throws IOException {
         Scanner echo = new Scanner(System.in);
         // scan user input
@@ -75,7 +86,12 @@ public class Parser {
         }
     }
 
-    static Event parseEvent(String userInput) {
+    /**
+     * makes sense of the user input for event task
+     * @param userInput
+     * @return
+     */
+    public static Event parseEvent(String userInput) {
         // take the description by finding the start and end index
         int descriptionStartIndex = userInput.indexOf(" ");
         int descriptionEndIndex = userInput.indexOf("/at");
@@ -87,7 +103,12 @@ public class Parser {
         return new Event(description, convertedAt);
     }
 
-    static Deadline parseDeadline(String userInput) {
+    /**
+     * makes sense of the user input for deadline task
+     * @param userInput
+     * @return
+     */
+    public static Deadline parseDeadline(String userInput) {
         // take the description by finding the start and end index
         int descriptionStartIndex = userInput.indexOf(" ");
         int descriptionEndIndex = userInput.indexOf("/by");
@@ -99,7 +120,14 @@ public class Parser {
         return new Deadline(description, convertedBy);
     }
 
-    static ToDo parseToDo(String userInput) throws ToDoException {
+    /**
+     * makes sense of the user input for to-do task
+     * handles empty todo task
+     * @param userInput
+     * @return
+     * @throws ToDoException
+     */
+    public static ToDo parseToDo(String userInput) throws ToDoException {
         // take the description by finding the start index
         int descriptionStartIndex = userInput.indexOf(" ");
         String description = userInput.substring(descriptionStartIndex);
@@ -110,7 +138,12 @@ public class Parser {
         return new ToDo(description);
     }
 
-    static ToDo parseExistingToDo(String userData) {
+    /**
+     * makes sense of existing todo task from saved file
+     * @param userData
+     * @return
+     */
+    public static ToDo parseExistingToDo(String userData) {
         // take out the description
         String description = userData.split("]")[2];
 
@@ -118,7 +151,12 @@ public class Parser {
         return new ToDo(description);
     }
 
-    static Deadline parseExistingDeadline(String userData) {
+    /**
+     * makes sense of existing deadline task from saved file
+     * @param userData
+     * @return
+     */
+    public static Deadline parseExistingDeadline(String userData) {
         // take indexes
         int descriptionStartIndex = userData.indexOf(" ");
         int descriptionEndIndex = userData.indexOf("by:");
@@ -129,14 +167,24 @@ public class Parser {
         return new Deadline(description, by);
     }
 
-    static String stripBrackets(String userData) {
+    /**
+     * strips unused brackets from saved file
+     * @param userData
+     * @return
+     */
+    public static String stripBrackets(String userData) {
         // erase brackets
         userData = userData.replace("(", "");
         userData = userData.replace(")", "");
         return userData;
     }
 
-    static Event parseExistingEvent(String userData) {
+    /**
+     * makes sense of existing event task from saved file
+     * @param userData
+     * @return
+     */
+    public static Event parseExistingEvent(String userData) {
         // take indexes
         int descriptionStartIndex = userData.indexOf(" ");
         int descriptionEndIndex = userData.indexOf("at:");
@@ -147,12 +195,21 @@ public class Parser {
         return new Event(description, at);
     }
 
+    /**
+     * matches keyword in list and prints filtered list
+     * @param userInput
+     */
     public static void find(String userInput) {
         userInput = userInput.split(" ")[1];
         TaskList.filteredList(userInput);
     }
 
-    static String parseDate(String dateAndTime) {
+    /**
+     * handles date format
+     * @param dateAndTime
+     * @return
+     */
+    public static String parseDate(String dateAndTime) {
         String[] dateComponent;
         String date;
         String time;
@@ -173,6 +230,11 @@ public class Parser {
         return dateAndTime;
     }
 
+    /**
+     * counts string for date component
+     * @param dateAndTime
+     * @return
+     */
     public static int countSubstring(String dateAndTime){
         String[] substring = dateAndTime.split(" ");
         int count = 0;
