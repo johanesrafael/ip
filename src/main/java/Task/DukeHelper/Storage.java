@@ -18,8 +18,8 @@ import java.util.Scanner;
 public class Storage {
     /**
      * reads the file from designated path
-     * @throws IOException
-     * @throws OtherException
+     * @throws IOException if invalid input
+     * @throws OtherException if invalid command
      */
     public static void readFile() throws IOException, OtherException {
         // get path
@@ -41,8 +41,8 @@ public class Storage {
 
     /**
      * checks if the file is existed or not. if not, creates new file
-     * @param file
-     * @throws IOException
+     * @param file File to read
+     * @throws IOException if invalid input
      */
     private static void isFolderExisted(File file) throws IOException {
         if (!file.exists() && !file.isDirectory()) {
@@ -118,7 +118,7 @@ public class Storage {
 
     /**
      *  creates file if the file does not exist and rewrite file whenever it updates
-     * @throws IOException
+     * @throws IOException if invalid input
      */
     public static void createFile() throws IOException {
         // find file

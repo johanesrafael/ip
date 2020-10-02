@@ -19,7 +19,7 @@ public class TaskList {
 
     /**
      *  makes sense of user input then insert to task list
-     * @param userInput
+     * @param userInput User Input to insert
      */
     public static void insertEvent(String userInput) {
         Event task = Parser.parseEvent(userInput);
@@ -29,7 +29,7 @@ public class TaskList {
 
     /**
      *  makes sense of user input then insert to task list
-     * @param userInput
+     * @param userInput User Input to insert
      */
     public static void insertDeadline(String userInput) {
         Deadline task = Parser.parseDeadline(userInput);
@@ -39,8 +39,8 @@ public class TaskList {
 
     /**
      * makes sense of user input then insert to task list
-     * @param userInput
-     * @throws ToDoException
+     * @param userInput User Input to insert
+     * @throws ToDoException if todo task is empty
      */
     public static void insertToDo(String userInput) throws ToDoException {
         ToDo task = Parser.parseToDo(userInput);
@@ -65,7 +65,7 @@ public class TaskList {
 
     /**
      * mark the selected task as done
-     * @param userInput
+     * @param userInput User Input to set as done
      */
     public static void setDone(String userInput) {
         // take out the word after "done"
@@ -78,7 +78,7 @@ public class TaskList {
 
     /**
      * delete selected task
-     * @param userInput
+     * @param userInput User Input to delete
      */
     public static void delete(String userInput){
         // take out the word after "delete"
@@ -93,8 +93,8 @@ public class TaskList {
 
     /**
      * makes new filtered list using the passed keyword
-     * @param tasksData
-     * @param filterString
+     * @param tasksData Task Data to filter
+     * @param filterString Filter String as keyword
      * @return
      */
     public static ArrayList<Task> filterByString(ArrayList<Task> tasksData, String filterString) {
@@ -106,7 +106,7 @@ public class TaskList {
 
     /**
      * prints the filtered list
-     * @param userInput
+     * @param userInput User Input to do filter
      */
     public static void filteredList(String userInput){
         Ui.showFilteredListHeader();

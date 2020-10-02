@@ -16,7 +16,7 @@ import java.util.Scanner;
 public class Parser {
     /**
      * inserts to list by determining the type of task
-     * @param userInput
+     * @param userInput User input to determine its task type
      * @throws OtherException
      * @throws IOException
      */
@@ -46,7 +46,7 @@ public class Parser {
 
     /**
      * handles command and executes it
-     * @throws IOException
+     * @throws IOException if other invalid command
      */
     public static void handleCommand() throws IOException {
         Scanner echo = new Scanner(System.in);
@@ -88,7 +88,7 @@ public class Parser {
 
     /**
      * makes sense of the user input for event task
-     * @param userInput
+     * @param userInput User input to parse
      * @return
      */
     public static Event parseEvent(String userInput) {
@@ -105,7 +105,7 @@ public class Parser {
 
     /**
      * makes sense of the user input for deadline task
-     * @param userInput
+     * @param userInput User input to parse
      * @return
      */
     public static Deadline parseDeadline(String userInput) {
@@ -122,10 +122,9 @@ public class Parser {
 
     /**
      * makes sense of the user input for to-do task
-     * handles empty todo task
-     * @param userInput
+     * @param userInput User input to parse
      * @return
-     * @throws ToDoException
+     * @throws ToDoException if todotask is empty
      */
     public static ToDo parseToDo(String userInput) throws ToDoException {
         // take the description by finding the start index
@@ -140,7 +139,7 @@ public class Parser {
 
     /**
      * makes sense of existing todo task from saved file
-     * @param userData
+     * @param userData User Data of todo from saved file to parse
      * @return
      */
     public static ToDo parseExistingToDo(String userData) {
@@ -153,7 +152,7 @@ public class Parser {
 
     /**
      * makes sense of existing deadline task from saved file
-     * @param userData
+     * @param userData User Data of deadline from saved file to parse
      * @return
      */
     public static Deadline parseExistingDeadline(String userData) {
@@ -169,7 +168,7 @@ public class Parser {
 
     /**
      * strips unused brackets from saved file
-     * @param userData
+     * @param userData User Data to strip
      * @return
      */
     public static String stripBrackets(String userData) {
@@ -181,7 +180,7 @@ public class Parser {
 
     /**
      * makes sense of existing event task from saved file
-     * @param userData
+     * @param userData User Data of event from saved file to parse
      * @return
      */
     public static Event parseExistingEvent(String userData) {
@@ -197,7 +196,7 @@ public class Parser {
 
     /**
      * matches keyword in list and prints filtered list
-     * @param userInput
+     * @param userInput User Input as keyword
      */
     public static void find(String userInput) {
         userInput = userInput.split(" ")[1];
@@ -206,7 +205,7 @@ public class Parser {
 
     /**
      * handles date format
-     * @param dateAndTime
+     * @param dateAndTime Date and/ or Time of the user input to parse
      * @return
      */
     public static String parseDate(String dateAndTime) {
@@ -232,7 +231,7 @@ public class Parser {
 
     /**
      * counts string for date component
-     * @param dateAndTime
+     * @param dateAndTime Date and/or Time to be counted its substrings
      * @return
      */
     public static int countSubstring(String dateAndTime){
