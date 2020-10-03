@@ -31,7 +31,7 @@ public class Ui {
 
     public static void viewEmptyToDoMessage(){
         showLine();
-        System.out.println("\n ☹ OOPS!!! The description of a todo cannot be empty.\n");
+        System.out.println("\n ~OOPS!!! The description of a todo cannot be empty.\n");
         lineSeparator();
     }
 
@@ -45,7 +45,7 @@ public class Ui {
 
     public static void viewInvalidCommandMessage() {
         showLine();
-        System.out.println("\n ☹ OOPS!!! I'm sorry, but I don't know what that means :-(\n");
+        System.out.println("\n ~OOPS!!! I'm sorry, but I don't know what that means :-(\n");
         lineSeparator();
     }
 
