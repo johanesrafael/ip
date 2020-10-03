@@ -29,6 +29,8 @@ public class Parser {
                 TaskList.insertToDo(userInput);
             } catch (ToDoException e) {
                 Ui.viewEmptyToDoMessage();
+            } catch (IndexOutOfBoundsException e){
+                Ui.viewEmptyToDoMessage();
             }
             break;
         case "deadline":
@@ -130,7 +132,7 @@ public class Parser {
         // take the description by finding the start index
         int descriptionStartIndex = userInput.indexOf(" ");
         String description = userInput.substring(descriptionStartIndex);
-        if(descriptionStartIndex != 4 || description.isEmpty()){
+        if(descriptionStartIndex != 4|| description.isEmpty()){
             throw new ToDoException();
         }
         // create To-Do task for passing over the user input to the actual task array
